@@ -1,0 +1,161 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Ihre Sprachreise nach Großbritannien seit über 20 Jahren" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-gray-50 text-gray-800 font-sans">
+		<!-- Header -->
+		<header class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+			<div class="max-w-7xl mx-auto px-4">
+				<div class="flex justify-between items-center h-16">
+					<!-- Logo -->
+					<a href="/" class="flex items-center">
+						<img src="/images/client-logo.jpg" alt="English in Britain" class="h-10 w-auto"/>
+					</a>
+					
+					<!-- Desktop Nav -->
+					<nav class="hidden lg:flex items-center space-x-8">
+						<a href="/schuler" class="text-gray-700 hover:text-blue-600 transition font-medium">Schüler</a>
+						<a href="/erwachsene" class="text-gray-700 hover:text-blue-600 transition font-medium">Erwachsene</a>
+						<a href="/internate" class="text-gray-700 hover:text-blue-600 transition font-medium">Internate</a>
+						<a href="/englisch-plus" class="text-gray-700 hover:text-blue-600 transition font-medium">Englisch Plus</a>
+						<a href="/preise" class="text-gray-700 hover:text-blue-600 transition font-medium">Preise</a>
+						<a href="/sprachtest" class="text-gray-700 hover:text-blue-600 transition font-medium text-green-600">Sprachtest</a>
+						<a href="/kontakt" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition">Kontakt</a>
+					</nav>
+					
+					<!-- Mobile Menu Button -->
+					<button id="mobile-menu-btn" class="lg:hidden p-2">
+						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+			
+			<!-- Mobile Menu -->
+			<div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+				<div class="px-4 py-4 space-y-3">
+					<a href="/schuler" class="block py-2 text-gray-700 hover:text-blue-600">Schüler</a>
+					<a href="/erwachsene" class="block py-2 text-gray-700 hover:text-blue-600">Erwachsene</a>
+					<a href="/internate" class="block py-2 text-gray-700 hover:text-blue-600">Internate</a>
+					<a href="/englisch-plus" class="block py-2 text-gray-700 hover:text-blue-600">Englisch Plus</a>
+					<a href="/preise" class="block py-2 text-gray-700 hover:text-blue-600">Preise</a>
+					<a href="/sprachtest" class="block py-2 text-green-600 font-medium">Sprachtest</a>
+					<a href="/kontakt" class="block py-2 text-blue-600 font-medium">Kontakt</a>
+				</div>
+			</div>
+		</header>
+		
+		<slot />
+		
+		<!-- Footer -->
+		<footer class="bg-gray-900 text-white pt-16 pb-8">
+			<div class="max-w-7xl mx-auto px-4">
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+					<!-- About -->
+					<div>
+						<a href="/" class="inline-block mb-6">
+							<img src="/images/client-logo.jpg" alt="English in Britain" class="h-10 w-auto"/>
+						</a>
+						<p class="text-gray-400 mb-6">Ihr Partner für Sprachreisen nach Großbritannien seit über 20 Jahren. Wir helfen Ihnen, Ihr Englisch zu verbessern.</p>
+						<div class="flex space-x-4">
+							<a href="#" class="text-gray-400 hover:text-white transition">📘</a>
+							<a href="#" class="text-gray-400 hover:text-white transition">📷</a>
+							<a href="#" class="text-gray-400 hover:text-white transition">🐦</a>
+						</div>
+					</div>
+					
+					<!-- Angebote -->
+					<div>
+						<h4 class="font-semibold text-lg mb-4">Angebote</h4>
+						<ul class="space-y-3 text-gray-400">
+							<li><a href="/schuler" class="hover:text-white transition">Schüler</a></li>
+							<li><a href="/erwachsene" class="hover:text-white transition">Erwachsene</a></li>
+							<li><a href="/internate" class="hover:text-white transition">Internate</a></li>
+							<li><a href="/englisch-plus" class="hover:text-white transition">Englisch Plus</a></li>
+							<li><a href="/preise" class="hover:text-white transition">Preise</a></li>
+						</ul>
+					</div>
+					
+					<!-- Info -->
+					<div>
+						<h4 class="font-semibold text-lg mb-4">Info</h4>
+						<ul class="space-y-3 text-gray-400">
+							<li><a href="/ueber-uns" class="hover:text-white transition">Über uns</a></li>
+							<li><a href="/faq" class="hover:text-white transition">FAQ</a></li>
+							<li><a href="/blog" class="hover:text-white transition">Blog</a></li>
+							<li><a href="/datenschutz" class="hover:text-white transition">Datenschutz</a></li>
+							<li><a href="/impressum" class="hover:text-white transition">Impressum</a></li>
+						</ul>
+					</div>
+					
+					<!-- Kontakt -->
+					<div>
+						<h4 class="font-semibold text-lg mb-4">Kontakt</h4>
+						<ul class="space-y-3 text-gray-400">
+							<li>📧 info@englishinbritain.de</li>
+							<li>📞 Mo-Fr 9-17 Uhr</li>
+							<li>📍 Deutschland</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+					© 2026 English in Britain. Alle Rechte vorbehalten.
+				</div>
+			</div>
+		</footer>
+		
+		<!-- Cookie Banner -->
+		<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 z-50 hidden">
+			<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+				<p class="text-sm">Wir verwenden keine Tracking-Cookies. Diese Website nutzt nur technisch notwendige Cookies.</p>
+				<div class="flex gap-3">
+					<button id="cookie-accept" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm font-medium transition">
+						Verstanden
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			// Cookie Banner
+			const banner = document.getElementById('cookie-banner');
+			const acceptBtn = document.getElementById('cookie-accept');
+			
+			// Check if user has already accepted
+			if (!localStorage.getItem('cookieAccepted')) {
+				banner?.classList.remove('hidden');
+			}
+			
+			acceptBtn?.addEventListener('click', () => {
+				localStorage.setItem('cookieAccepted', 'true');
+				banner?.classList.add('hidden');
+			});
+
+			// Mobile Menu
+			const btn = document.getElementById('mobile-menu-btn');
+			const menu = document.getElementById('mobile-menu');
+			btn?.addEventListener('click', () => {
+				menu?.classList.toggle('hidden');
+			});
+		</script>
+	</body>
+</html>

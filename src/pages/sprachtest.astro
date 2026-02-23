@@ -1,0 +1,323 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Sprachtest - Englisch level testen" description="Testen Sie Ihr Englischlevel kostenlos. Finden Sie heraus, ob Sie A1, A2, B1, B2, C1 oder C2 haben.">
+	<!-- Hero -->
+	<section class="relative h-[400px] flex items-center">
+		<div class="absolute inset-0 overflow-hidden bg-gradient-to-r from-blue-900 to-blue-700">
+			<img src="/images/classroom.jpg" alt="Sprachtest" class="w-full h-full object-cover opacity-30"/>
+			<div class="absolute inset-0 bg-black/40"></div>
+		</div>
+		<div class="relative max-w-7xl mx-auto px-4 w-full">
+			<span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-4">Kostenlos & Anonym</span>
+			<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Testen Sie Ihr Englischlevel</h1>
+			<p class="text-xl text-blue-100 max-w-2xl">Finden Sie in 10 Minuten heraus, which English level Sie haben (A1-C2)</p>
+		</div>
+	</section>
+
+	<!-- Test -->
+	<section class="py-16">
+		<div class="max-w-3xl mx-auto px-4">
+			<!-- Progress -->
+			<div class="mb-8">
+				<div class="flex justify-between text-sm text-gray-600 mb-2">
+					<span>Frage <span id="currentQ">1</span> von <span id="totalQ">10</span></span>
+					<span id="progressPercent">10%</span>
+				</div>
+				<div class="w-full bg-gray-200 rounded-full h-2">
+					<div id="progressBar" class="bg-blue-600 h-2 rounded-full transition-all duration-300" style="width: 10%"></div>
+				</div>
+			</div>
+
+			<!-- Quiz Card -->
+			<div id="quizCard" class="bg-white rounded-2xl shadow-lg p-8">
+				<h2 id="questionText" class="text-xl font-semibold mb-6">Loading question...</h2>
+				
+				<div id="answers" class="space-y-3">
+					<!-- Answers will be inserted here -->
+				</div>
+			</div>
+
+			<!-- Result Card (hidden initially) -->
+			<div id="resultCard" class="hidden bg-white rounded-2xl shadow-lg p-8 text-center">
+				<div class="text-6xl mb-4" id="resultEmoji">🎉</div>
+				<h2 class="text-2xl font-bold mb-2">Ihr Ergebnis</h2>
+				<p id="resultLevel" class="text-4xl font-bold text-blue-600 mb-4">B2</p>
+				<p id="resultText" class="text-gray-600 mb-6">Sie haben ein fortgeschrittenes Englischniveau!</p>
+				
+				<div class="bg-blue-50 rounded-xl p-6 mb-6 text-left">
+					<h3 class="font-semibold mb-2">Was bedeutet das?</h3>
+					<p id="levelDescription" class="text-sm text-gray-600"></p>
+				</div>
+				
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="/kontakt" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+						Beratung anfordern
+					</a>
+					<button onclick="restartTest()" class="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">
+						Test wiederholen
+					</button>
+				</div>
+			</div>
+
+			<!-- Start Card (shown initially) -->
+			<div id="startCard" class="bg-white rounded-2xl shadow-lg p-8 text-center">
+				<div class="text-6xl mb-4">📝</div>
+				<h2 class="text-2xl font-bold mb-4">Wie funktioniert der Test?</h2>
+				<ul class="text-left space-y-3 mb-6 text-gray-600">
+					<li class="flex items-start gap-2">
+						<span class="text-green-500">✓</span>
+						<span>10 Multiple-Choice Fragen</span>
+					</li>
+					<li class="flex items-start gap-2">
+						<span class="text-green-500">✓</span>
+						<span>Ca. 10 Minuten</span>
+					</li>
+					<li class="flex items-start gap-2">
+						<span class="text-green-500">✓</span>
+						<span>Für alle Niveaus (A1-C2)</span>
+					</li>
+					<li class="flex items-start gap-2">
+						<span class="text-green-500">✓</span>
+						<span>Kostenlos & ohne Anmeldung</span>
+					</li>
+				</ul>
+				<button onclick="startTest()" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition text-lg">
+					Test starten ▶
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Level Info -->
+	<section class="py-16 bg-gray-50">
+		<div class="max-w-7xl mx-auto px-4">
+			<h2 class="text-2xl font-bold text-center mb-12">Die verschiedenen Englischlevel</h2>
+			
+			<div class="grid md:grid-cols-3 gap-6">
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<div class="text-lg font-bold text-green-600 mb-2">A1 - Anfänger</div>
+					<p class="text-gray-600 text-sm">Kann vertraute tägliche Ausdrücke und sehr einfache Sätze verstehen und verwenden.</p>
+				</div>
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<div class="text-lg font-bold text-green-500 mb-2">A2 - Grundlagen</div>
+					<p class="text-gray-600 text-sm">Kann sich in routineangelegenheiten verständigen und Informationen austauschen.</p>
+				</div>
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<div class="text-lg font-bold text-yellow-500 mb-2">B1 - Mittelstufe</div>
+					<p class="text-gray-600 text-sm">Kann die Hauptpunkte verstehen und sich zu многим Themen äußern.</p>
+				</div>
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<div class="text-lg font-bold text-orange-500 mb-2">B2 - Fortgeschritten</div>
+					<p class="text-gray-600 text-sm">Kann sich spontan und fließend unterhalten und komplexe Texte verstehen.</p>
+				</div>
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<div class="text-lg font-bold text-red-500 mb-2">C1 - Kompetent</div>
+					<p class="text-gray-600 text-sm">Kann sich fließend ausdrücken und komplexe Situationen bewältigen.</p>
+				</div>
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<div class="text-lg font-bold text-purple-600 mb-2">C2 - Meister</div>
+					<p class="text-gray-600 text-sm">Kann praktisch alles mühelos lesen und verstehen, sich spontan äußern.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA -->
+	<section class="py-16 bg-blue-600 text-white">
+		<div class="max-w-4xl mx-auto px-4 text-center">
+			<h2 class="text-2xl font-bold mb-4">Noch Fragen zu Ihrem Level?</h2>
+			<p class="text-blue-100 mb-6">Wir beraten Sie gerne persönlich zum passenden Kurs</p>
+			<a href="/kontakt" class="inline-block bg-white text-blue-700 px-8 py-3 rounded-xl font-semibold hover:bg-blue-50 transition">
+				Beratung anfordern
+			</a>
+		</div>
+	</section>
+</Layout>
+
+<script is:inline>
+const questions = [
+	{
+		question: "Choose the correct sentence:",
+		answers: [
+			{ text: "She go to school every day.", correct: false },
+			{ text: "She goes to school every day.", correct: true },
+			{ text: "She going to school every day.", correct: false },
+			{ text: "She is going to school every day.", correct: false }
+		]
+	},
+	{
+		question: "What is the past tense of 'go'?",
+		answers: [
+			{ text: "goes", correct: false },
+			{ text: "going", correct: false },
+			{ text: "went", correct: true },
+			{ text: "gone", correct: false }
+		]
+	},
+	{
+		question: "Choose the correct word: 'I ___ playing tennis.'",
+		answers: [
+			{ text: "am", correct: true },
+			{ text: "is", correct: false },
+			{ text: "are", correct: false },
+			{ text: "be", correct: false }
+		]
+	},
+	{
+		question: "Which sentence is correct?",
+		answers: [
+			{ text: "He don't like coffee.", correct: false },
+			{ text: "He doesn't likes coffee.", correct: false },
+			{ text: "He doesn't like coffee.", correct: true },
+			{ text: "He not like coffee.", correct: false }
+		]
+	},
+	{
+		question: "Complete: 'If I ___ rich, I would buy a house.'",
+		answers: [
+			{ text: "was", correct: false },
+			{ text: "am", correct: false },
+			{ text: "were", correct: true },
+			{ text: "be", correct: false }
+		]
+	},
+	{
+		question: "Choose the correct form: 'She has ___ to Paris twice.'",
+		answers: [
+			{ text: "been", correct: true },
+			{ text: "gone", correct: false },
+			{ text: "went", correct: false },
+			{ text: "go", correct: false }
+		]
+	},
+	{
+		question: "Which is correct? 'I have lived here ___ 2010.'",
+		answers: [
+			{ text: "since", correct: true },
+			{ text: "for", correct: false },
+			{ text: "from", correct: false },
+			{ text: "in", correct: false }
+		]
+	},
+	{
+		question: "Complete: 'By next year, I ___ here for five years.'",
+		answers: [
+			{ text: "will work", correct: false },
+			{ text: "will have been working", correct: true },
+			{ text: "work", correct: false },
+			{ text: "worked", correct: false }
+		]
+	},
+	{
+		question: "Which sentence uses the passive correctly?",
+		answers: [
+			{ text: "The cake was bake by my mother.", correct: false },
+			{ text: "The cake was baked by my mother.", correct: true },
+			{ text: "The cake is bake by my mother.", correct: false },
+			{ text: "The cake baking by my mother.", correct: false }
+		]
+	},
+	{
+		question: "Choose the correct conditional: 'If I ___ the answer, I would tell you.'",
+		answers: [
+			{ text: "knew", correct: true },
+			{ text: "know", correct: false },
+			{ text: "known", correct: false },
+			{ text: "knowing", correct: false }
+		]
+	}
+];
+
+const levelDescriptions = {
+	"A1": "Sie haben ein grundlegendes Englischniveau. Sie können einfache Sätze verstehen und sich vorstellen, wer Sie sind.",
+	"A2": "Sie haben Grundkenntnisse. Sie können sich in routinemäßigen Situationen verständigen und Informationen austauschen.",
+	"B1": "Sie haben ein mittleres Englischniveau. Sie können die Hauptpunkte verstehen und sich zu vertrauten Themen äußern.",
+	"B2": "Sie haben ein fortgeschrittenes Englischniveau. Sie können sich spontan unterhalten und komplexe Texte verstehen.",
+	"C1": "Sie haben ein hohes Englischniveau. Sie können sich fließend ausdrücken und komplexe Situationen bewältigen.",
+	"C2": "Sie haben ein sehr hohes Englischniveau. Sie können praktisch mühelos alles verstehen und sich spontan äußern."
+};
+
+let currentQuestion = 0;
+let score = 0;
+
+function startTest() {
+	document.getElementById('startCard').classList.add('hidden');
+	document.getElementById('quizCard').classList.remove('hidden');
+	showQuestion();
+}
+
+function showQuestion() {
+	const q = questions[currentQuestion];
+	document.getElementById('questionText').textContent = q.question;
+	document.getElementById('currentQ').textContent = currentQuestion + 1;
+	document.getElementById('totalQ').textContent = questions.length;
+	document.getElementById('progressPercent').textContent = Math.round((currentQuestion + 1) / questions.length * 100) + '%';
+	document.getElementById('progressBar').style.width = ((currentQuestion + 1) / questions.length * 100) + '%';
+	
+	const answersDiv = document.getElementById('answers');
+	answersDiv.innerHTML = '';
+	
+	q.answers.forEach((answer, index) => {
+		const btn = document.createElement('button');
+		btn.className = 'w-full text-left p-4 rounded-lg border-2 border-gray-200 hover:border-blue-500 hover:bg-blue-50 transition';
+		btn.textContent = answer.text;
+		btn.onclick = () => selectAnswer(answer.correct);
+		answersDiv.appendChild(btn);
+	});
+}
+
+function selectAnswer(correct) {
+	if (correct) {
+		score++;
+	}
+	currentQuestion++;
+	
+	if (currentQuestion < questions.length) {
+		showQuestion();
+	} else {
+		showResult();
+	}
+}
+
+function showResult() {
+	document.getElementById('quizCard').classList.add('hidden');
+	document.getElementById('resultCard').classList.remove('hidden');
+	
+	// Calculate level based on score
+	let level, emoji;
+	if (score <= 2) { level = "A1"; emoji = "📚"; }
+	else if (score <= 4) { level = "A2"; emoji = "📖"; }
+	else if (score <= 6) { level = "B1"; emoji = "💬"; }
+	else if (score <= 8) { level = "B2"; emoji = "🎯"; }
+	else if (score <= 9) { level = "C1"; emoji = "⭐"; }
+	else { level = "C2"; emoji = "🏆"; }
+	
+	document.getElementById('resultEmoji').textContent = emoji;
+	document.getElementById('resultLevel').textContent = level;
+	document.getElementById('levelDescription').textContent = levelDescriptions[level];
+	
+	// Set result text based on level
+	let resultText = "";
+	if (level === "A1" || level === "A2") {
+		resultText = "Sie haben noch Grundlagen zu lernen. Ein Anfängerkurs ist genau das Richtige für Sie!";
+	} else if (level === "B1") {
+		resultText = "Sie haben ein solides mittleres Niveau. Ein Aufbaukurs würde Ihnen helfen, sich zu verbessern.";
+	} else if (level === "B2") {
+		resultText = "Sie haben ein gutes fortgeschrittenes Niveau! Perfekt für Business Englisch oder Examensvorbereitung.";
+	} else {
+		resultText = "Ausgezeichnet! Sie haben ein sehr hohes Niveau. Weiter so!";
+	}
+	document.getElementById('resultText').textContent = resultText;
+}
+
+function restartTest() {
+	currentQuestion = 0;
+	score = 0;
+	document.getElementById('resultCard').classList.add('hidden');
+	document.getElementById('quizCard').classList.remove('hidden');
+	showQuestion();
+}
+</script>
+</Layout>

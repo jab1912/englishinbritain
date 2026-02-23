@@ -1,0 +1,397 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="English in Britain - Sprachreisen nach Großbritannien" description="Ihre Sprachreise nach Großbritannien seit über 20 Jahren. Sprachkurse für Schüler und Erwachsene, Internate, Cambridge, IELTS">
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "English in Britain",
+  "description": "Ihre Experten für Sprachreisen nach Großbritannien seit über 20 Jahren",
+  "url": "https://www.englishinbritain.de",
+  "telephone": "+49-69-91-50-96-80",
+  "email": "info@englishinbritain.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Fichardstr. 38",
+    "addressLocality": "Frankfurt",
+    "postalCode": "60325",
+    "addressCountry": "DE"
+  },
+  "areaServed": ["England", "Schottland", "Irland"],
+  "serviceType": ["Sprachkurse", "Internate", "Bildungsurlaub"],
+  "priceRange": "€€"
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie lange dauert ein Sprachkurs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unsere Sprachkurse dauern zwischen 1 und 52 Wochen. Wir empfehlen mindestens 2-3 Wochen für einen messbaren Lernerfolg."
+      }
+    },
+    {
+      "@type": "Question", 
+      "name": "Was kostet eine Sprachreise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die Preise beginnen bei ca. 1.000€ für eine Woche. Inklusive sind Unterkunft, Unterricht und Freizeitprogramm."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ab welchem Alter können Kinder teilnehmen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wir bieten Kurse für Kinder ab 3 Jahren an. Für Schüler von 8-17 Jahren haben wir spezielle Jugendprogramme."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wo finden die Kurse statt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unsere Sprachschulen befinden sich in England, Schottland und Irland. Beliebte Städte sind London, Oxford, Cambridge, Brighton und Edinburgh."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie ist die Unterbringung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sie können zwischen Gastfamilie oder Internat wählen. Beide Optionen bieten ein authentisches Spracherlebnis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sind die Kurse ganzjährig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, die meisten Kurse finden ganzjährig statt. Ferienkurse für Schüler sind in den deutschen Schulferien besonders beliebt."
+      }
+    }
+  ]
+}
+</script>
+	
+	<!-- Hero Section -->
+	<section class="relative h-[600px] flex items-center">
+		<!-- Background Image -->
+		<div class="absolute inset-0 overflow-hidden">
+			<img 
+				src="/images/uk-hero.jpg" 
+				alt="Großbritannien" 
+				class="w-full h-full object-cover"
+			/>
+			<div class="absolute inset-0 bg-black/40"></div>
+		</div>
+		
+		<!-- Content -->
+		<div class="relative max-w-7xl mx-auto px-4 w-full">
+			<div class="max-w-3xl">
+				<span class="inline-block bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium mb-6">
+					Seit über 20 Jahren Ihr Partner
+				</span>
+				<h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+					Englisch lernen in Großbritannien
+				</h1>
+				<p class="text-xl md:text-2xl text-white/90 mb-8">
+					Ihre Experten für Sprachreisen nach England, Schottland und Irland
+				</p>
+				<div class="flex flex-wrap gap-4">
+					<a href="/kontakt" class="bg-white text-blue-700 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition shadow-lg">
+						Kostenlose Beratung 💬
+					</a>
+					<a href="/schuler" class="bg-blue-600/30 backdrop-blur text-white border-2 border-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition">
+						Programme entdecken →
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Stats Banner -->
+	<section class="bg-blue-600 py-12">
+		<div class="max-w-7xl mx-auto px-4">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+				<div>
+					<div class="text-4xl font-bold text-white mb-2">20+</div>
+					<div class="text-blue-200">Jahre Erfahrung</div>
+				</div>
+				<div>
+					<div class="text-4xl font-bold text-white mb-2">200+</div>
+					<div class="text-blue-200">Sprachschulen</div>
+				</div>
+				<div>
+					<div class="text-4xl font-bold text-white mb-2">1000+</div>
+					<div class="text-blue-200">Zufriedene Schüler</div>
+				</div>
+				<div>
+					<div class="text-4xl font-bold text-white mb-2">4.8</div>
+					<div class="text-blue-200">Bewertung</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Über uns -->
+	<section class="py-20 bg-white">
+		<div class="max-w-7xl mx-auto px-4">
+			<div class="max-w-4xl mx-auto text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold mb-6">Ihre Experten für Englisch Sprachreisen</h2>
+				<p class="text-xl text-gray-600">
+					English in Britain bietet Ihnen professionelle und individuelle Beratung bei Sprachkursen in England, Schottland und Irland – und das mit mehr als 20 Jahren Erfahrung.
+				</p>
+			</div>
+			
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="text-center p-6">
+					<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">✅</span>
+					</div>
+					<h3 class="text-xl font-bold mb-2">Unabhängige Beratung</h3>
+					<p class="text-gray-600">Unsere Beratung ist vollkommen unabhängig, da wir an keine Sprachschule gebunden sind.</p>
+				</div>
+				<div class="text-center p-6">
+					<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">🎯</span>
+					</div>
+					<h3 class="text-xl font-bold mb-2">Individuell angepasst</h3>
+					<p class="text-gray-600">Wir finden den passenden Sprachkurs, der ganz individuell auf Ihre Wünsche angepasst ist.</p>
+				</div>
+				<div class="text-center p-6">
+					<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">💯</span>
+					</div>
+					<h3 class="text-xl font-bold mb-2">Sorgenfrei genießen</h3>
+					<p class="text-gray-600">Sie bekommen eine ehrliche, professionelle Beratung von der Planung bis zum Aufenthalt.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Angebote -->
+	<section class="py-20">
+		<div class="max-w-7xl mx-auto px-4">
+			<div class="text-center mb-16">
+				<h2 class="text-3xl md:text-4xl font-bold mb-4">Unsere Angebote</h2>
+				<p class="text-xl text-gray-600 max-w-2xl mx-auto">Finden Sie das perfekte Programm für Ihre Bedürfnisse</p>
+			</div>
+			
+			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+				<!-- Schüler -->
+				<a href="/schuler" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+					<div class="h-48 overflow-hidden">
+						<img src="/images/students.jpg" alt="Schüler" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"/>
+					</div>
+					<div class="p-6">
+						<div class="text-3xl mb-3">🎓</div>
+						<h3 class="text-xl font-bold mb-2">Schüler</h3>
+						<p class="text-gray-600 text-sm">Ferienkurse, Sportcamps, Klassenfahrten für 8-21 Jährige</p>
+						<div class="mt-4 text-blue-600 font-medium group-hover:text-blue-700">
+							Mehr erfahren →
+						</div>
+					</div>
+				</a>
+				
+				<!-- Erwachsene -->
+				<a href="/erwachsene" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+					<div class="h-48 overflow-hidden">
+						<img src="/images/classroom.jpg" alt="Erwachsene" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"/>
+					</div>
+					<div class="p-6">
+						<div class="text-3xl mb-3">👨‍💼</div>
+						<h3 class="text-xl font-bold mb-2">Erwachsene</h3>
+						<p class="text-gray-600 text-sm">General English, Business English, Cambridge, IELTS</p>
+						<div class="mt-4 text-blue-600 font-medium group-hover:text-blue-700">
+							Mehr erfahren →
+						</div>
+					</div>
+				</a>
+				
+				<!-- Internate -->
+				<a href="/internate" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+					<div class="h-48 overflow-hidden">
+						<img src="/images/campus.jpg" alt="Internate" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"/>
+					</div>
+					<div class="p-6">
+						<div class="text-3xl mb-3">🏫</div>
+						<h3 class="text-xl font-bold mb-2">Internate</h3>
+						<p class="text-gray-600 text-sm">Boarding Schools in England, Schottland und Wales</p>
+						<div class="mt-4 text-blue-600 font-medium group-hover:text-blue-700">
+							Mehr erfahren →
+						</div>
+					</div>
+				</a>
+				
+				<!-- Englisch Plus -->
+				<a href="/englisch-plus" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+					<div class="h-48 bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
+						<span class="text-6xl">⛳</span>
+					</div>
+					<div class="p-6">
+						<div class="text-3xl mb-3">⛳</div>
+						<h3 class="text-xl font-bold mb-2">Englisch Plus</h3>
+						<p class="text-gray-600 text-sm">Kombination mit Golf, Sport, Wellness, Kunst oder Kultur</p>
+						<div class="mt-4 text-blue-600 font-medium group-hover:text-blue-700">
+							Mehr erfahren →
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Warum Großbritannien -->
+	<section class="py-20 bg-gray-50">
+		<div class="max-w-7xl mx-auto px-4">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold mb-4">Warum Englisch in Großbritannien lernen?</h2>
+				<p class="text-xl text-gray-600 max-w-2xl mx-auto">Die Vorteile einer Sprachreise</p>
+			</div>
+			
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<h3 class="text-lg font-bold mb-3">🌍 Immersives Lernen</h3>
+					<p class="text-gray-600">Der Unterricht findet in einer komplett englischsprachigen Umgebung statt. Sie lernen nicht nur in der Sprachschule, sondern auch in der Freizeit.</p>
+				</div>
+				
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<h3 class="text-lg font-bold mb-3">👨‍🏫 Qualifizierte Lehrer</h3>
+					<p class="text-gray-600">Alle Lehrer sind Muttersprachler und haben eine professionelle Ausbildung als Sprachlehrer abgeschlossen.</p>
+				</div>
+				
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<h3 class="text-lg font-bold mb-3">🎯 Individuelle Auswahl</h3>
+					<p class="text-gray-600">Wir berücksichtigen Faktoren wie Kursart, Gruppengröße, Schulambiente, Lage, Freizeitangebot und Preis.</p>
+				</div>
+				
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<h3 class="text-lg font-bold mb-3">🏰 Kultur erleben</h3>
+					<p class="text-gray-600">Die britischen Inseln haben touristisch Einiges zu bieten – verbinden Sie Ihre Sprachreise mit Sehenswürdigkeiten.</p>
+				</div>
+				
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<h3 class="text-lg font-bold mb-3">📚 Große Auswahl</h3>
+					<p class="text-gray-600">Nirgendwo gibt es so viel Auswahl für Englischkurse wie in Großbritannien.</p>
+				</div>
+				
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<h3 class="text-lg font-bold mb-3">💪 Bessere Ergebnisse</h3>
+					<p class="text-gray-600">Unterricht in einem englischsprachigen Land ist wesentlich effektiver als zu Hause.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Standorte -->
+	<section class="py-20 bg-white">
+		<div class="max-w-7xl mx-auto px-4">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold mb-4">Unsere Standorte</h2>
+				<p class="text-xl text-gray-600">Lernen Sie Englisch in den schönsten Städten Großbritanniens</p>
+			</div>
+			
+			<div class="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
+				<div class="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+					<div class="text-3xl mb-2">🏰</div>
+					<h4 class="font-semibold">London</h4>
+					<p class="text-sm text-gray-500">England</p>
+				</div>
+				<div class="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+					<div class="text-3xl mb-2">🎓</div>
+					<h4 class="font-semibold">Oxford</h4>
+					<p class="text-sm text-gray-500">England</p>
+				</div>
+				<div class="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+					<div class="text-3xl mb-2">📚</div>
+					<h4 class="font-semibold">Cambridge</h4>
+					<p class="text-sm text-gray-500">England</p>
+				</div>
+				<div class="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+					<div class="text-3xl mb-2">🏖️</div>
+					<h4 class="font-semibold">Brighton</h4>
+					<p class="text-sm text-gray-500">England</p>
+				</div>
+				<div class="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+					<div class="text-3xl mb-2">🏴󠁧󠁢󠁳󠁣󠁴󠁿</div>
+					<h4 class="font-semibold">Edinburgh</h4>
+					<p class="text-sm text-gray-500">Schottland</p>
+				</div>
+				<div class="bg-gray-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+					<div class="text-3xl mb-2">🐉</div>
+					<h4 class="font-semibold">Cardiff</h4>
+					<p class="text-sm text-gray-500">Wales</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testimonials -->
+	<section class="py-20 bg-gray-50">
+		<div class="max-w-7xl mx-auto px-4">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold mb-4">Was unsere Kunden sagen</h2>
+			</div>
+			
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<p class="text-gray-600 italic mb-4">"Ihre Beratung war perfekt! Sie haben mir genau das empfohlen, was ich gesucht habe! Ich bin vollumfänglich zufrieden!"</p>
+					<p class="font-semibold">— D. Vogel</p>
+				</div>
+				
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<p class="text-gray-600 italic mb-4">"Ich bin von Anfang an von den verschiedenen Mitarbeitern in Frankfurt sehr gut beraten worden. Es hatte immer jemand für mich Zeit."</p>
+					<p class="font-semibold">— I. Koch</p>
+				</div>
+				
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<p class="text-gray-600 italic mb-4">"Die Atmosphäre an der Business-Sprachschule ist spitzenmäßig! Die Lehrer sind fabelhaft und sehr motivierend!"</p>
+					<p class="font-semibold">— B. Volkmann</p>
+				</div>
+				
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<p class="text-gray-600 italic mb-4">"Die Idee, einen Sprachkurs in England zu absolvieren, hatte ich erst im Frühjahr. Dank ihres ausführlichen Telefonats fand ich schnell das passende Angebot."</p>
+					<p class="font-semibold">— T. Münch</p>
+				</div>
+				
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<p class="text-gray-600 italic mb-4">"Es war die ideale Business-Schule und perfekte Umgebung für meine Bedürfnisse. Besonders beeindruckend waren die Lehrer!"</p>
+					<p class="font-semibold">— N. Streich</p>
+				</div>
+				
+				<div class="bg-white p-6 rounded-xl shadow-md">
+					<p class="text-gray-600 italic mb-4">"Unsere Töchter fühlten sich schnell heimisch. Vielen Dank für die reibungslose und großartige Unterstützung!"</p>
+					<p class="font-semibold">— A. und R. Rietz</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA -->
+	<section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+		<div class="max-w-4xl mx-auto px-4 text-center">
+			<h2 class="text-3xl md:text-4xl font-bold mb-6">Bereit für Ihre Sprachreise?</h2>
+			<p class="text-xl text-blue-100 mb-8">Kontaktieren Sie uns für eine kostenlose Beratung. Wir helfen Ihnen, die perfekte Sprachreise zu finden.</p>
+			<div class="flex flex-wrap justify-center gap-4">
+				<a href="/kontakt" class="bg-white text-blue-700 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition shadow-lg inline-block">
+					Beratung anfordern 💬
+				</a>
+				<a href="/preise" class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition inline-block">
+					Preise ansehen →
+				</a>
+			</div>
+		</div>
+	</section>
+</Layout>

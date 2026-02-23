@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" fill="none">
+  <!-- Background -->
+  <rect width="400" height="100" fill="#1e40af"/>
+  
+  <!-- UK Flag simplified -->
+  <circle cx="50" cy="50" r="30" fill="white"/>
+  <circle cx="50" cy="50" r="28" fill="#012169"/>
+  <path d="M50 22 L54 50 L22 50 L50 78 L46 50 L78 50 Z" fill="#C8102E"/>
+  <path d="M22 50 L50 28 L50 22 L50 28 L78 50 L50 72 L50 78 L50 72 L22 50 Z" fill="white"/>
+  
+  <!-- Text -->
+  <text x="95" y="42" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white">English</text>
+  <text x="95" y="70" font-family="Arial, sans-serif" font-size="20" fill="#93c5fd">in Britain</text>
+  
+  <!-- Decorative line -->
+  <rect x="95" y="80" width="180" height="3" fill="#3b82f6" rx="1"/>
+</svg>
