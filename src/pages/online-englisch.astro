@@ -2,20 +2,62 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Online Englisch lernen - English in Britain" description="Online Englischkurse. Virtuelles Sprachtraining von zuhause.">
-	<section class="relative h-[400px] flex items-center">
+<Layout title="Online Englisch lernen - English in Britain" description="Online Englischkurse von zuhause. Virtuelles Sprachtraining mit muttersprachlichen Lehrern. Flexible Kurse für alle Level.">
+	<section class="relative h-[500px] flex items-center">
 		<div class="absolute inset-0 overflow-hidden">
 			<img src="/images/classroom.jpg" alt="Online Englisch" class="w-full h-full object-cover"/>
-			<div class="absolute inset-0 bg-black/40"></div>
+			<div class="absolute inset-0 bg-black/50"></div>
 		</div>
 		<div class="relative max-w-7xl mx-auto px-4 w-full">
+			<span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-4">Online</span>
 			<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Online Englisch</h1>
-			<p class="text-xl text-blue-100">Virtuelles Sprachtraining</p>
+			<p class="text-xl text-blue-100">Virtuelles Sprachtraining von zuhause</p>
 		</div>
 	</section>
+
 	<section class="py-16">
 		<div class="max-w-7xl mx-auto px-4">
-			<p><em>(Content from old site - to be added)</em></p>
+			<div class="prose max-w-4xl mx-auto mb-16">
+				<h2 class="text-2xl font-bold mb-6">Online Englisch lernen</h2>
+				<p class="text-gray-600 mb-6">Mit unseren Online-Kursen können Sie Englisch lernen, ohne Ihr Zuhause zu verlassen. Flexible Zeiten, professionelle Lehrer und moderne Technologie.</p>
+				
+				<h3 class="text-xl font-semibold mb-4">Vorteile von Online-Unterricht</h3>
+				<ul class="list-disc pl-6 mb-6 text-gray-600">
+					<li>Flexible Zeiten - lernen Sie wann Sie wollen</li>
+					<li>Von überall - nur Internet benötigt</li>
+					<li>Individuell - Einzelunterricht möglich</li>
+					<li>Kostengünstig - keine Reisekosten</li>
+					<li>Aufzeichnungsmöglichkeiten - Unterricht wiederholen</li>
+				</ul>
+			</div>
+
+			<div class="grid md:grid-cols-2 gap-8 mb-16">
+				<div class="bg-white p-8 rounded-xl shadow-lg">
+					<h3 class="text-xl font-bold mb-4">Kursformate</h3>
+					<ul class="space-y-2 text-gray-600">
+						<li>✓ Einzelunterricht</li>
+						<li>✓ Kleingruppen (max. 6)</li>
+						<li>✓ Intensivkurse</li>
+						<li>✓ Business Englisch</li>
+					</ul>
+				</div>
+				<div class="bg-white p-8 rounded-xl shadow-lg">
+					<h3 class="text-xl font-bold mb-4">Technische Voraussetzungen</h3>
+					<ul class="space-y-2 text-gray-600">
+						<li>✓ Computer/Tablet</li>
+						<li>✓ Internetverbindung</li>
+						<li>✓ Webcam & Mikrofon</li>
+						<li>✓ Zoom/Skype/Teams</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="text-center">
+				<h2 class="text-2xl font-bold mb-6">Online Englischkurs buchen?</h2>
+				<a href="/kontakt" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
+					Beratung anfordern
+				</a>
+			</div>
 		</div>
 	</section>
 </Layout>

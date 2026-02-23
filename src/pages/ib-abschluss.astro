@@ -2,23 +2,94 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="IB Abschluss in Großbritannien - English in Britain" description="IB Diploma in Großbritannien. Bereiten Sie sich auf das International Baccalaureate an britischen Schulen vor.">
-	<section class="relative h-[400px] flex items-center">
+<Layout title="IB Abschluss in Großbritannien - English in Britain" description="IB Diploma in Großbritannien. Internationales Abitur (IB) an britischen Schulen. Wir beraten Sie zur Auswahl der passenden Schule.">
+	<section class="relative h-[500px] flex items-center">
 		<div class="absolute inset-0 overflow-hidden">
-			<img src="/images/campus.jpg" alt="IB Abschluss" class="w-full h-full object-cover"/>
-			<div class="absolute inset-0 bg-black/40"></div>
+			<img src="/images/campus.jpg" alt="IB Abschluss in Großbritannien" class="w-full h-full object-cover"/>
+			<div class="absolute inset-0 bg-black/50"></div>
 		</div>
 		<div class="relative max-w-7xl mx-auto px-4 w-full">
-			<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">IB Abschluss in Großbritannien</h1>
-			<p class="text-xl text-blue-100">International Baccalaureate an britischen Schulen</p>
+			<span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-4">IB Diploma</span>
+			<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Internationales Abitur in England</h1>
+			<p class="text-xl text-blue-100">IB Abschluss an britischen Schulen - Ihr Weg zum internationalen Schulabschluss</p>
 		</div>
 	</section>
 
 	<section class="py-16">
 		<div class="max-w-7xl mx-auto px-4">
-			<h2>IB Diploma in Großbritannien</h2>
-			<p>Informationen zum International Baccalaureate (IB) in Großbritannien.</p>
-			<p><em>(Content from old site - to be added)</em></p>
+			<!-- Einleitung -->
+			<div class="prose max-w-4xl mx-auto mb-16">
+				<h2 class="text-2xl font-bold mb-6">Was ist ein International Baccalaureate Diploma (IB)?</h2>
+				<p class="text-gray-600 mb-6">Der IB Abschluss ist so aufgebaut, dass die Schüler aus sechs verschiedenen Fächergruppen mindestens drei als „Higher Level" (Leistungskurs) und die übrigen als „Standard Level" (Grundkurs) belegen müssen. Die „Higher Level" Kurse können entsprechend der späteren Studien- oder Berufswünsche Ihres Kindes gewählt werden.</p>
+				
+				<p class="text-gray-600 mb-6">Die Schüler können dabei aus folgenden sechs Fachbereichen wählen:</p>
+				
+				<ul class="list-disc pl-6 mb-6 text-gray-600">
+					<li>Language and Literature (Sprache und Literatur)</li>
+					<li>Language Acquisition (Fremdsprache)</li>
+					<li>Individuals and Societies (Gesellschaftswissenschaften)</li>
+					<li>Experimental Sciences (Naturwissenschaften)</li>
+					<li>Mathematics (Mathematik)</li>
+					<li>The Arts (Kunst)</li>
+				</ul>
+			</div>
+
+			<!-- Vorteile -->
+			<div class="grid md:grid-cols-2 gap-8 mb-16">
+				<div class="bg-white p-8 rounded-xl shadow-lg">
+					<h3 class="text-xl font-bold mb-4">Vorteile des IB Abschlusses</h3>
+					<ul class="space-y-3 text-gray-600">
+						<li class="flex items-start gap-2">✓ International anerkannt</li>
+						<li class="flex items-start gap-2">✓ Zugang zu weltweiten Universitäten</li>
+						<li class="flex items-start gap-2">✓ Breite Fächerwahl</li>
+						<li class="flex items-start gap-2">✓ Englischsprachiger Unterricht</li>
+					</ul>
+				</div>
+				
+				<div class="bg-white p-8 rounded-xl shadow-lg">
+					<h3 class="text-xl font-bold mb-4">Warum Großbritannien?</h3>
+					<ul class="space-y-3 text-gray-600">
+						<li class="flex items-start gap-2">✓ Erstklassige Schulen</li>
+						<li class="flex items-start gap-2">✓ Englisch lernen im Mutterland</li>
+						<li class="flex items-start gap-2">✓ Kulturelle Vielfalt</li>
+						<li class="flex items-start gap-2">✓ Internationale Atmosphäre</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Aufbau -->
+			<div class="bg-blue-50 rounded-2xl p-8 mb-16">
+				<h2 class="text-2xl font-bold mb-6">Wie ist der IB Abschluss aufgebaut?</h2>
+				<p class="text-gray-600 mb-4">Das IB Diploma Programm umfasst sechs Fächer sowie drei Kernkomponenten:</p>
+				<div class="grid md:grid-cols-3 gap-6">
+					<div class="bg-white p-6 rounded-xl">
+						<div class="font-bold text-blue-600 mb-2">Theory of Knowledge</div>
+						<p class="text-sm text-gray-600">Kritische Auseinandersetzung mit Wissen und Erkenntnis</p>
+					</div>
+					<div class="bg-white p-6 rounded-xl">
+						<div class="font-bold text-blue-600 mb-2">CAS</div>
+						<p class="text-sm text-gray-600">Creativity, Activity, Service - außerschulische Aktivitäten</p>
+					</div>
+					<div class="bg-white p-6 rounded-xl">
+						<div class="font-bold text-blue-600 mb-2">Extended Essay</div>
+						<p class="text-sm text-gray-600">Eine eigenständige Forschungsarbeit</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- CTA -->
+			<div class="text-center">
+				<h2 class="text-2xl font-bold mb-6">IB Abschluss in Großbritannien?</h2>
+				<p class="text-gray-600 mb-8">Wir beraten Sie bei der Auswahl der passenden Schule für den IB Abschluss Ihres Kindes.</p>
+				<div class="flex flex-wrap justify-center gap-4">
+					<a href="/kontakt" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
+						Beratung anfordern
+					</a>
+					<a href="/kontakt" class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition">
+						Rückruf vereinbaren
+					</a>
+				</div>
+			</div>
 		</div>
 	</section>
 </Layout>

@@ -2,20 +2,60 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Über uns - English in Britain" description="Über English in Britain. Ihr Partner für Sprachreisen seit über 20 Jahren.">
-	<section class="relative h-[400px] flex items-center">
+<Layout title="Über uns - English in Britain" description="Über English in Britain. Ihr Partner für Sprachreisen seit über 20 Jahren. Wir vermitteln Sprachkurse in Großbritannien, Schottland und Irland.">
+	<section class="relative h-[500px] flex items-center">
 		<div class="absolute inset-0 overflow-hidden">
 			<img src="/images/campus.jpg" alt="Über uns" class="w-full h-full object-cover"/>
-			<div class="absolute inset-0 bg-black/40"></div>
+			<div class="absolute inset-0 bg-black/50"></div>
 		</div>
 		<div class="relative max-w-7xl mx-auto px-4 w-full">
-			<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Über uns</h1>
-			<p class="text-xl text-blue-100">Seit über 20 Jahren Ihr Partner für Sprachreisen</p>
+			<span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-4">Über uns</span>
+			<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Über English in Britain</h1>
+			<p class="text-xl text-blue-100">Ihr Partner für Sprachreisen seit über 20 Jahren</p>
 		</div>
 	</section>
+
 	<section class="py-16">
 		<div class="max-w-7xl mx-auto px-4">
-			<p><em>(Content from old site - to be added)</em></p>
+			<div class="prose max-w-4xl mx-auto mb-16">
+				<h2 class="text-2xl font-bold mb-6">Wer wir sind</h2>
+				<p class="text-gray-600 mb-6">English in Britain ist Ihr erfahrener Partner für Sprachreisen nach Großbritannien, Schottland und Irland. Seit über zwei Jahrzehnten vermitteln wir Sprachkurse für Schüler und Erwachsene.</p>
+				
+				<p class="text-gray-600 mb-6">Unser Team besteht aus erfahrenen Bildungsberatern, die das britische Schulsystem und die Sprachschulen vor Ort kennen. Wir beraten Sie individuell und finden die passende Schule für Ihre Bedürfnisse.</p>
+
+				<h3 class="text-xl font-semibold mb-4">Unsere Leistungen</h3>
+				<ul class="list-disc pl-6 mb-6 text-gray-600">
+					<li>Sprachreisen für Schüler (8-17 Jahre)</li>
+					<li>Sprachkurse für Erwachsene</li>
+					<li>Boarding School Aufenthalte</li>
+					<li>IB Diploma Programme</li>
+					<li>Abiturvorbereitung</li>
+					<li>Online Englischkurse</li>
+				</ul>
+			</div>
+
+			<div class="grid md:grid-cols-3 gap-8 mb-16">
+				<div class="bg-white p-8 rounded-xl shadow-lg text-center">
+					<div class="text-4xl font-bold text-blue-600 mb-2">20+</div>
+					<div class="text-gray-600">Jahre Erfahrung</div>
+				</div>
+				<div class="bg-white p-8 rounded-xl shadow-lg text-center">
+					<div class="text-4xl font-bold text-blue-600 mb-2">200+</div>
+					<div class="text-gray-600">Sprachschulen</div>
+				</div>
+				<div class="bg-white p-8 rounded-xl shadow-lg text-center">
+					<div class="text-4xl font-bold text-blue-600 mb-2">1000+</div>
+					<div class="text-gray-600">Zufriedene Schüler</div>
+				</div>
+			</div>
+
+			<div class="text-center">
+				<h2 class="text-2xl font-bold mb-6">Kontaktieren Sie uns</h2>
+				<p class="text-gray-600 mb-8">Wir freuen uns auf Ihre Anfrage!</p>
+				<a href="/kontakt" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
+					Kontakt
+				</a>
+			</div>
 		</div>
 	</section>
 </Layout>
