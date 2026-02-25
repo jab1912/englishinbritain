@@ -11,26 +11,53 @@ import Layout from '../layouts/Layout.astro';
   </div>
   <div class="relative max-w-7xl mx-auto px-4 w-full">
     <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Internate & Boarding Schools</h1>
-    <p class="text-xl text-blue-100">Boarding Schools in England, Schottland und Irland</p>
+    <p class="text-xl text-blue-100">Schulaufenthalte in England, Schottland und Irland</p>
   </div>
 </section>
 
 <section class="py-16">
   <div class="max-w-7xl mx-auto px-4">
     <div class="prose max-w-4xl mx-auto">
-      <p class="text-gray-600 text-lg mb-6">Ein Schuljahr oder Trimester an einem britischen Internat ist eine bereichernde Erfahrung für junge Menschen. Die Schüler leben auf dem Schulgelände und werden rund um die Uhr betreut.</p>
+      <p class="text-xl text-gray-600 mb-6">Ein Schuljahr oder Trimester an einem britischen Internat ist eine bereichernde Erfahrung für junge Menschen. Die Schüler leben auf dem Schulgelände und werden rund um die Uhr betreut.</p>
       
-      <p class="text-gray-600 text-lg mb-6">Britische Internate bieten erstklassige akademische Ausbildung in Kombination mit breitem Sport- und Freizeitangebot. Die Abschlüsse (A-Levels, IB, GCSE) sind international anerkannt.</p>
+      <p class="text-gray-600 mb-6">Britische Internate bieten erstklassige akademische Ausbildung in Kombination mit breitem Sport- und Freizeitangebot.</p>
+      
+      <p class="text-gray-600">Die Abschlüsse (A-Levels, IB, GCSE) sind international anerkannt und öffnen Türen zu weltweit führenden Universitäten.</p>
     </div>
   </div>
 </section>
 
+<!-- Internate Types -->
 <section class="py-16 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-4 text-center">
-    <a href="/kontakt" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
-      Beratung anfordern
-    </a>
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-8 text-center">Unsere Internate</h2>
+    
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href="/internate/private-internate" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block text-center">
+        <div class="text-4xl mb-4">🏰</div>
+        <h3 class="font-bold text-lg mb-2">Private Internate</h3>
+        <p class="text-gray-600 text-sm">Exklusive Privatschulen</p>
+      </a>
+      
+      <a href="/internate/staatliche-schulen" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block text-center">
+        <div class="text-4xl mb-4">🏛️</div>
+        <h3 class="font-bold text-lg mb-2">Staatliche Schulen</h3>
+        <p class="text-gray-600 text-sm">Öffentliche Schulen mit Internat</p>
+      </a>
+      
+      <a href="/internate/unsere-internate" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block text-center">
+        <div class="text-4xl mb-4">⭐</div>
+        <h3 class="font-bold text-lg mb-2">Unsere Favoriten</h3>
+        <p class="text-gray-600 text-sm">Die Schulen die wir empfehlen</p>
+      </a>
+    </div>
   </div>
+</section>
+
+<section class="py-16 text-center">
+  <a href="/kontakt" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
+    Beratung anfordern
+  </a>
 </section>
 
 </Layout>

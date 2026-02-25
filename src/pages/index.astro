@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Sprachreise England - English in Britain" description="Ihre Experten für Englisch Sprachreisen nach England, Schottland und Irland seit über 20 Jahren.">
+<Layout title="Sprachreise England - English in Britain" description="Sprachreisen nach England für Erwachsene und Kinder, Internatsaufenthalte und English+ Angebote. Mit über 20 Jahren Erfahrung.">
 
 <!-- Hero -->
 <section class="relative h-[500px] flex items-center">
@@ -12,69 +12,120 @@ import Layout from '../layouts/Layout.astro';
   </div>
   <div class="relative max-w-7xl mx-auto px-4 w-full">
     <span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-4">Ihre Experten seit 1997</span>
-    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Sprachreisen nach England</h1>
-    <p class="text-xl text-blue-100 max-w-2xl">Finden Sie Ihren passenden Sprachkurs in England, Schottland oder Irland</p>
+    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Sprachreise nach England, Schottland oder Irland finden</h1>
+    <p class="text-xl text-blue-100 max-w-2xl">English in Britain bietet Ihnen professionelle und individuelle Beratung bei Sprachkursen</p>
   </div>
 </section>
 
-<!-- Main Content -->
+<!-- Main Intro -->
 <section class="py-16">
   <div class="max-w-7xl mx-auto px-4">
     <div class="prose max-w-4xl mx-auto">
-      <p class="text-xl text-gray-600 mb-8">Wenn man Geld für einen Sprachkurs in England, Irland oder Schottland ausgibt, möchte man sicher sein, dass der Englischkurs und die damit verbundene Erfahrung jeden Cent wert sind. Unsere Expertise und jahrelange Erfahrung kann Ihnen genau das gewährleisten.</p>
+      <p class="text-xl text-gray-600 mb-6">Wenn man Geld für einen Sprachkurs in England, Irland oder Schottland ausgibt, möchte man sicher sein, dass der Englischkurs und die damit verbundene Erfahrung jeden Cent wert sind. Unsere Expertise und jahrelange Erfahrung kann Ihnen genau das gewährleisten.</p>
       
-      <p class="text-gray-600 mb-6">Wir haben über 200 Sprachschulen in England, Irland und Malta besucht und finden für Sie so den passenden Sprachkurs, der ganz individuell auf Ihre Wünsche angepasst ist. Unsere Beratung ist vollkommen unabhängig, da wir an keine Sprachschule gebunden sind.</p>
+      <p class="text-gray-600 mb-6">Wir haben über 200 Sprachschulen in England, Irland und Malta besucht und finden für Sie so den passenden Sprachkurs, der ganz individuell auf Ihre Wünsche angepasst ist. Unsere Beratung ist vollkommen unabhängig, da wir an keine Sprachschule gebunden sind und uns dementsprechend nicht beeinflussen lassen können.</p>
       
       <p class="text-gray-600 mb-6">Bei uns bekommen Sie eine ehrliche, individuelle und professionelle Beratung, damit Sie Ihre Sprachreise von Anfang bis Ende sorgenfrei genießen können.</p>
     </div>
   </div>
 </section>
 
-<!-- Navigation Cards -->
+<!-- Main Navigation Cards -->
 <section class="py-16 bg-gray-50">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <a href="/erwachsene" class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition block text-center">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Erwachsene -->
+      <a href="/erwachsene" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition block text-center">
         <div class="text-4xl mb-4">👔</div>
-        <h3 class="font-bold text-lg">Erwachsene</h3>
-        <p class="text-sm text-gray-600">Sprachkurse für Erwachsene</p>
+        <h3 class="font-bold text-lg mb-2">Erwachsene</h3>
+        <p class="text-sm text-gray-600">Business Englisch, Sprachzertifikate und mehr</p>
       </a>
       
-      <a href="/schuler" class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition block text-center">
+      <!-- Schüler -->
+      <a href="/schuler" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition block text-center">
         <div class="text-4xl mb-4">🎒</div>
-        <h3 class="font-bold text-lg">Schüler</h3>
-        <p class="text-sm text-gray-600">Ferienkurse für Schüler</p>
+        <h3 class="font-bold text-lg mb-2">Schüler</h3>
+        <p class="text-sm text-gray-600">Sprachkurse und Sprachferien für Kinder</p>
       </a>
       
-      <a href="/internate" class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition block text-center">
+      <!-- Internate -->
+      <a href="/internate" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition block text-center">
         <div class="text-4xl mb-4">🏫</div>
-        <h3 class="font-bold text-lg">Internate</h3>
-        <p class="text-sm text-gray-600">Boarding Schools</p>
+        <h3 class="font-bold text-lg mb-2">Internate</h3>
+        <p class="text-sm text-gray-600">Schulaufenthalte für ein Term oder Schuljahr</p>
       </a>
       
-      <a href="/englisch-plus" class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition block text-center">
+      <!-- Englisch+ -->
+      <a href="/englisch-plus" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition block text-center">
         <div class="text-4xl mb-4">⛳</div>
-        <h3 class="font-bold text-lg">Englisch+</h3>
-        <p class="text-sm text-gray-600">Mit Sport & Aktivitäten</p>
+        <h3 class="font-bold text-lg mb-2">Englisch+</h3>
+        <p class="text-sm text-gray-600">Mit Sport, Golf und Freizeitprogramm</p>
       </a>
     </div>
   </div>
 </section>
 
-<!-- Testimonials -->
+<!-- Vorteile / Why us -->
 <section class="py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Ihre Vorteile bei English in Britain</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center">
+        <div class="text-4xl mb-4">💼</div>
+        <h3 class="font-bold text-lg mb-2">Über 20 Jahre Erfahrung</h3>
+        <p class="text-gray-600">Seit 1997 beraten wir Schüler und Erwachsene</p>
+      </div>
+      
+      <div class="text-center">
+        <div class="text-4xl mb-4">🎯</div>
+        <h3 class="font-bold text-lg mb-2">Über 200 Schulen</h3>
+        <p class="text-gray-600">Persönlich besucht und geprüft</p>
+      </div>
+      
+      <div class="text-center">
+        <div class="text-4xl mb-4">🤝</div>
+        <h3 class="font-bold text-lg mb-2">Unabhängige Beratung</h3>
+        <p class="text-gray-600">Wir empfehlen nur das Beste für Sie</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-16 bg-gray-50">
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-3xl font-bold text-center mb-12">Das sagen unsere Kunden</h2>
     
-    <div class="grid md:grid-cols-2 gap-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="bg-white p-6 rounded-xl shadow">
-        <p class="text-gray-600 italic mb-4">"Ich habe meinen Aufenthalt sehr genossen. Die Anzahl der Studenten in meiner Klasse war bedingt durch die Nebensaison extrem klein. Den Lehrern war es deswegen möglich gezielt auf meine/unsere Bedürfnisse und besondere Wünsche einzugehen."</p>
+        <p class="text-gray-600 italic mb-4">"Ich habe meinen Aufenthalt sehr genossen. Die Anzahl der Studenten in meiner Klasse war bedingt durch die Nebensaison extrem klein. Den Lehrern war es deswegen möglich gezielt auf meine Bedürfnisse einzugehen."</p>
         <p class="font-semibold">— M. Molnar</p>
       </div>
       
       <div class="bg-white p-6 rounded-xl shadow">
-        <p class="text-gray-600 italic mb-4">"Ich bin vollumfänglich zufrieden! Ich habe sehr viel gelernt während meinem 3-wöchigen Aufenthalt! Ich hatte auch andere Sprachschulvermittler angefragt, habe jedoch von niemandem eine so spezifische und kompetente Beratung bekommen wie von Ihnen."</p>
+        <p class="text-gray-600 italic mb-4">"Ich bin vollumfänglich zufrieden! Ich habe sehr viel gelernt während meinem 3-wöchigen Aufenthalt! Von niemandem habe ich eine so spezifische und kompetente Beratung bekommen wie von Ihnen."</p>
         <p class="font-semibold">— D. Vogel</p>
+      </div>
+      
+      <div class="bg-white p-6 rounded-xl shadow">
+        <p class="text-gray-600 italic mb-4">"Ich bin von Anfang an von den verschiedenen Mitarbeitern in Frankfurt sehr gut beraten worden."</p>
+        <p class="font-semibold">— I. Koch</p>
+      </div>
+      
+      <div class="bg-white p-6 rounded-xl shadow">
+        <p class="text-gray-600 italic mb-4">"Die Atmosphäre an der Business-Sprachschule ist spitzenmäßig! Die Lehrer sind fabelhaft!"</p>
+        <p class="font-semibold">— B. Volkmann</p>
+      </div>
+      
+      <div class="bg-white p-6 rounded-xl shadow">
+        <p class="text-gray-600 italic mb-4">"Die Idee, einen Sprachkurs in England zu absolvieren, hatte ich erst im Frühjahr diesen Jahres. Dank ihres ausführlichen Telefonats fand ich schnell das für mich passende Angebot."</p>
+        <p class="font-semibold">— T. Münch</p>
+      </div>
+      
+      <div class="bg-white p-6 rounded-xl shadow">
+        <p class="text-gray-600 italic mb-4">"Es war die ideale Business-Schule und perfekte Umgebung für meine Bedürfnisse."</p>
+        <p class="font-semibold">— N. Streich</p>
       </div>
     </div>
   </div>
@@ -84,7 +135,7 @@ import Layout from '../layouts/Layout.astro';
 <section class="py-16 bg-blue-600 text-white text-center">
   <div class="max-w-4xl mx-auto px-4">
     <h2 class="text-3xl font-bold mb-6">Bereit für Ihre Sprachreise?</h2>
-    <p class="text-blue-100 mb-8">Wir beraten Sie gerne - vollkommen unabhängig und kostenlos.</p>
+    <p class="text-blue-100 mb-8">Wir beraten Sie vollkommen unabhängig und kostenlos.</p>
     <a href="/kontakt" class="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition">
       Kontakt aufnehmen
     </a>

@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Sprachreisen für Schüler - English in Britain" description="Sprachreisen für Kinder und Jugendliche nach England. Ferienkurse,Jugendkurse und mehr.">
+<Layout title="Sprachreisen für Schüler - English in Britain" description="Sprachreisen für Kinder und Jugendliche nach England. Ferienkurse, Jugendkurse und mehr.">
 
 <section class="relative h-[400px] flex items-center">
   <div class="absolute inset-0 overflow-hidden">
@@ -18,37 +18,72 @@ import Layout from '../layouts/Layout.astro';
 <section class="py-16">
   <div class="max-w-7xl mx-auto px-4">
     <div class="prose max-w-4xl mx-auto">
-      <p class="text-gray-600 text-lg mb-6">Neben der Einstufung in das richtige Sprachlevel wird selbstverständlich auch das Alter bei der Klassenbildung berücksichtigt. Beim Freizeitprogramm wird ebenfalls nach Alter differenziert.</p>
+      <p class="text-xl text-gray-600 mb-6">Neben der Einstufung in das richtige Sprachlevel wird selbstverständlich auch das Alter bei der Klassenbildung berücksichtigt. Beim Freizeitprogramm wird ebenfalls nach Alter differenziert.</p>
       
-      <p class="text-gray-600 text-lg mb-6">Alle Programme bieten eine große Bandbreite an Sport- und Freizeitaktivitäten, zudem werden verschiedene Ausflüge gemacht. Insbesondere bei den Internatsangeboten können einige Sportarten (wie z.B. Fußball oder Reiten) als Schwerpunkt gewählt werden.</p>
+      <p class="text-gray-600 mb-6">Alle Programme bieten eine große Bandbreite an Sport- und Freizeitaktivitäten, zudem werden verschiedene Ausflüge gemacht.</p>
       
-      <p class="text-gray-600 text-lg mb-6">Die Kosten für eine Sprachreise nach England für Schüler sind in der Regel höher als die bei Erwachsenen, da die Betreuung wesentlich intensiver und das Freizeitprogramm im Preis inbegriffen ist.</p>
+      <p class="text-gray-600 mb-6">Die Kosten für eine Sprachreise nach England für Schüler sind in der Regel höher als die bei Erwachsenen, da die Betreuung wesentlich intensiver und das Freizeitprogramm im Preis inbegriffen ist.</p>
     </div>
   </div>
 </section>
 
+<!-- Course Types -->
 <section class="py-16 bg-gray-50">
   <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-8 text-center">Unsere Angebote für Schüler</h2>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="/schuler/ferienkurse" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="font-bold text-lg mb-2">Ferienkurse</h3>
+        <p class="text-gray-600 text-sm">Während Schulferien in England</p>
+      </a>
+      
+      <a href="/schuler/abitur" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="font-bold text-lg mb-2">Abiturvorbereitung</h3>
+        <p class="text-gray-600 text-sm">Vorbereitung auf das Englisch Abitur</p>
+      </a>
+      
+      <a href="/schuler/sport" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="font-bold text-lg mb-2">Sportkurse</h3>
+        <p class="text-gray-600 text-sm">Englisch mit Sport kombinieren</p>
+      </a>
+      
+      <a href="/schuler/klassenfahrten" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="font-bold text-lg mb-2">Klassenfahrten</h3>
+        <p class="text-gray-600 text-sm">Für Schulklassen und Gruppen</p>
+      </a>
+      
+      <a href="/schuler/faq" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="font-bold text-lg mb-2">FAQ</h3>
+        <p class="text-gray-600 text-sm">Häufig gestellte Fragen</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Accommodation -->
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-2xl font-bold mb-8 text-center">Unterbringung</h2>
+    
     <div class="grid md:grid-cols-2 gap-8">
       <div class="bg-white p-8 rounded-xl shadow">
         <h3 class="text-xl font-bold mb-4">Gastfamilie</h3>
         <p class="text-gray-600">In der Familie wird in entspannter Atmosphäre außerhalb des Unterrichts Englisch gesprochen. Die Familien werden nach strengen Kriterien ausgesucht und müssen neben verschiedenen Sicherheitsregeln auch ein polizeiliches Führungszeugnis einreichen.</p>
       </div>
+      
       <div class="bg-white p-8 rounded-xl shadow">
         <h3 class="text-xl font-bold mb-4">Internat</h3>
-        <p class="text-gray-600">Im Internat werden die Jugendlichen in Sechs-, Vier- oder Einbettzimmern untergebracht und nach Alter getrennt. Die Wege zur Schule sind kurz, denn sowohl das Boarding House mit den Schlafzimmern als auch das Schulgebäude liegen auf dem gleichen Gelände.</p>
+        <p class="text-gray-600">Im Internat werden die Jugendlichen in Sechs-, Vier- oder Einbettzimmern untergebracht und nach Alter getrennt. Die Wege zur Schule sind kurz, denn sowohl das Boarding House als auch das Schulgebäude liegen auf dem gleichen Gelände.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="py-16">
-  <div class="max-w-7xl mx-auto px-4 text-center">
-    <a href="/kontakt" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
-      Beratung anfordern
-    </a>
-  </div>
+<section class="py-16 text-center bg-blue-600">
+  <a href="/kontakt" class="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition">
+    Kostenlose Beratung anfordern
+  </a>
 </section>
 
 </Layout>

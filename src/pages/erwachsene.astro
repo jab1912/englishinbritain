@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Sprachreisen für Erwachsene - English in Britain" description="Sprachkurse für Erwachsene in England. General English, Business Englisch und mehr.">
+<Layout title="Sprachreisen für Erwachsene - English in Britain" description="Sprachkurse für Erwachsene in England, Schottland und Irland. General English, Business Englisch, Cambridge und mehr.">
 
 <section class="relative h-[400px] flex items-center">
   <div class="absolute inset-0 overflow-hidden">
@@ -11,28 +11,65 @@ import Layout from '../layouts/Layout.astro';
   </div>
   <div class="relative max-w-7xl mx-auto px-4 w-full">
     <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Sprachreisen für Erwachsene</h1>
-    <p class="text-xl text-blue-100">General English, Business Englisch und mehr</p>
+    <p class="text-xl text-blue-100">General English, Business Englisch, Cambridge und mehr</p>
   </div>
 </section>
 
 <section class="py-16">
   <div class="max-w-7xl mx-auto px-4">
     <div class="prose max-w-4xl mx-auto">
-      <p class="text-gray-600 text-lg mb-6">Die meisten Sprachkurse finden fortlaufend statt, das heißt Sie können zu jedem beliebigen Wochenbeginn einsteigen. Alle Schulen testen vor Ort Ihren Sprachstand und beurteilen daraufhin, welches Kurs-Level für Sie am besten geeignet ist.</p>
+      <p class="text-xl text-gray-600 mb-6">Die meisten Sprachkurse finden fortlaufend statt, das heißt Sie können zu jedem beliebigen Wochenbeginn einsteigen. Alle Schulen testen vor Ort Ihren Sprachstand und beurteilen daraufhin, welches Kurs-Level für Sie am besten geeignet ist.</p>
       
-      <p class="text-gray-600 text-lg mb-6">Wir achten auf eine ausgewogene Nationalitätenmischung – denn weder sollen viele deutsche Muttersprachler in der Schule dominieren, noch ist es für das Lernklima gut, wenn es überproportional große Gruppen mit einer anderen Muttersprache in der Schule gibt.</p>
+      <p class="text-gray-600 mb-6">Wir achten auf eine ausgewogene Nationalitätenmischung – denn weder sollen viele deutsche Muttersprachler in der Schule dominieren, noch ist es für das Lernklima gut, wenn es überproportional große Gruppen mit einer anderen Muttersprache in der Schule gibt.</p>
       
-      <p class="text-gray-600 text-lg mb-6">Das Ziel einer Sprachreise in England für Erwachsene ist eine ganzheitliche Lernerfahrung. Die neuen Englischkenntnisse können direkt im englischsprachigen Umfeld angewandt werden.</p>
+      <p class="text-gray-600 mb-6">Das Ziel einer Sprachreise in England für Erwachsene ist eine ganzheitliche Lernerfahrung. Die neuen Englischkenntnisse können direkt im englischsprachigen Umfeld angewandt werden.</p>
     </div>
   </div>
 </section>
 
+<!-- Course Types -->
 <section class="py-16 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-4 text-center">
-    <a href="/kontakt" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
-      Beratung anfordern
-    </a>
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-8 text-center">Unsere Angebote für Erwachsene</h2>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="/erwachsene/general-english" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="font-bold text-lg mb-2">General English</h3>
+        <p class="text-gray-600 text-sm">Für alle, die ihre Sprachkenntnisse verbessern möchten</p>
+      </a>
+      
+      <a href="/erwachsene/business-english" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="font-bold text-lg mb-2">Business Englisch</h3>
+        <p class="text-gray-600 text-sm">Für Berufstätige und Führungskräfte</p>
+      </a>
+      
+      <a href="/erwachsene/sprachzertifikate" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="font-bold text-lg mb-2">Sprachzertifikate</h3>
+        <p class="text-gray-600 text-sm">Cambridge, IELTS, TOEFL Vorbereitung</p>
+      </a>
+      
+      <a href="/erwachsene/bildungsurlaub" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="font-bold text-lg mb-2">Bildungsurlaub</h3>
+        <p class="text-gray-600 text-sm">In verschiedenen Bundesländern anerkannt</p>
+      </a>
+      
+      <a href="/erwachsene/erasmus" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="font-bold text-lg mb-2">Erasmus+</h3>
+        <p class="text-gray-600 text-sm">Lehrerfortbildung und EU-geförderte Kurse</p>
+      </a>
+      
+      <a href="/erwachsene/faq" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="font-bold text-lg mb-2">FAQ</h3>
+        <p class="text-gray-600 text-sm">Häufig gestellte Fragen</p>
+      </a>
+    </div>
   </div>
+</section>
+
+<section class="py-16 text-center">
+  <a href="/kontakt" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
+    Kostenlose Beratung anfordern
+  </a>
 </section>
 
 </Layout>

@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Kontakt - English in Britain" description="Kontaktieren Sie uns für eine kostenlose Beratung.">
+<Layout title="Kontakt - English in Britain" description="Kontaktieren Sie uns für eine kostenlose Beratung zu Sprachreisen.">
 
 <section class="relative h-[400px] flex items-center">
   <div class="absolute inset-0 overflow-hidden">
@@ -17,15 +17,38 @@ import Layout from '../layouts/Layout.astro';
 
 <section class="py-16">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="prose max-w-2xl mx-auto">
-      <p class="text-gray-600 text-lg mb-6">Rufen Sie uns an oder schreiben Sie uns eine E-Mail. Wir beraten Sie vollkommen unabhängig und kostenlos.</p>
+    <div class="grid md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-2xl font-bold mb-6">Sie haben Fragen?</h2>
+        <p class="text-gray-600 mb-8">Dann rufen Sie uns einfach an, wir beantworten gerne alle Fragen unter der Telefonnummer:</p>
+        
+        <div class="mb-8">
+          <p class="font-bold text-lg">Tel.: 069-91 50 96 80</p>
+        </div>
+        
+        <p class="text-gray-600 mb-4">Alternativ können Sie auch gerne einen Rückruftermin mit uns vereinbaren. Wir melden uns dann bei Ihnen zu Ihrem Wunschtermin.</p>
+        
+        <p class="text-gray-600 mb-8">Und natürlich können Sie uns auch einfach eine E-Mail schreiben an:</p>
+        
+        <p class="font-bold text-lg">E-Mail: info@englishinbritain.de</p>
+      </div>
       
-      <p class="text-gray-600 text-lg mb-4"><strong>English in Britain</strong><br/>
-      Fichardstraße 38<br/>
-      60325 Frankfurt</p>
-      
-      <p class="text-gray-600 text-lg">Tel.: 069-91 50 96 80</p>
-      <p class="text-gray-600 text-lg">E-Mail: info@englishinbritain.de</p>
+      <div>
+        <h2 class="text-2xl font-bold mb-6">Unsere Bürozeiten</h2>
+        <div class="bg-gray-50 p-6 rounded-xl">
+          <p class="text-gray-600 mb-2"><strong>Montag - Freitag:</strong> 09:00 - 18:00 Uhr</p>
+          <p class="text-gray-600 mb-2"><strong>Samstag:</strong> Nach Vereinbarung</p>
+          <p class="text-gray-600"><strong>Sonntag:</strong> Geschlossen</p>
+        </div>
+        
+        <h3 class="text-xl font-bold mt-8 mb-4">Adresse</h3>
+        <p class="text-gray-600">
+          English in Britain<br>
+          Inhaber: Daniel Stein<br>
+          Fichardstraße 38<br>
+          60325 Frankfurt
+        </p>
+      </div>
     </div>
   </div>
 </section>
