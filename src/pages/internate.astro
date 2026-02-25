@@ -2,225 +2,35 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout 
-  title="Internat & Boarding School England | UK Schuljahr 2026"
-  description="Britisches Internat für deutsche Schüler. Boarding School in England, Schottland oder Irland.咨询德国团队，一站式申请。">
-  
-  <!-- FAQ Schema for SEO -->
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Was kostet ein Internat in England?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Die Kosten für ein britisches Internat liegen je nach Schule zwischen 3.000 und 8.000 GBP pro Trimester. Exklusive Schulen können auch deutlich teurer sein. Wir beraten Sie individuell zur passenden Schule."
-      }
-    }, {
-      "@type": "Question", 
-      "name": "Ab welchem Alter kann mein Kind aufs Internat?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Viele britische Internate nehmen bereits Kinder ab 7-8 Jahren auf. Es gibt sowohl Junior-Internate für Grundschulkinder als auch Senior-Internate für Schüler ab 11-13 Jahren."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Welche Abschlüsse sind möglich?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An britischen Internaten können Sie zwischen A-Levels, International Baccalaureate (IB) oder dem britischen GCSE wählen. Alle Abschlüsse sind international anerkannt."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Wie lange dauert ein Schulaufenthalt?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ein Schuljahr in England dauert 3 Trimester (ca. 9 Monate). Es ist aber auch möglich, nur ein oder zwei Trimester zu bleiben, oder einen kürzeren Aufenthalt zu arrangieren."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Braucht mein Kind Englischkenntnisse?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Grundlegende Englischkenntnisse sind empfehlenswert. Die meisten Schulen bieten jedoch ESL-Support (English as a Second Language) für internationale Schüler an."
-      }
-    }]}
-  )} />
-	<!-- Hero -->
-	<section class="relative h-[400px] flex items-center">
-		<div class="absolute inset-0 overflow-hidden">
-			<img src="/images/internate-3.jpg" alt="Internate in Großbritannien" class="w-full h-full object-cover"/>
-			<div class="absolute inset-0 bg-black/40"></div>
-		</div>
-		<div class="relative max-w-7xl mx-auto px-4 w-full">
-			<span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-4">Ab 8 Jahren</span>
-			<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Internate in Großbritannien</h1>
-			<p class="text-xl text-blue-100 max-w-2xl">Tradition und Moderne vereint: Ihr Kind an einem britischen Internat</p>
-		</div>
-	</section>
+<Layout title="Internate und Boarding Schools - English in Britain" description="Boarding Schools in England, Schottland und Irland. Für Schüler und Jugendliche.">
 
-	<!-- Content -->
-	<section class="py-16">
-		<div class="max-w-7xl mx-auto px-4">
-			
-			<!-- Einleitung -->
-			<div class="prose max-w-4xl mx-auto mb-16">
-				<h2 class="text-2xl font-bold mb-6">Warum eine britische Boarding School?</h2>
-				<p class="text-gray-600 mb-6">Britische <strong>Boarding Schools</strong> genießen weltweit einen exzellenten Ruf. Das <strong>britische Schulsystem</strong> kombiniert akademische Exzellenz mit Charakterbildung – genau das, was Eltern aus Deutschland für ihre Kinder suchen. Ein <strong>Schuljahr in England</strong>, Schottland oder Irland ist mehr als nur Sprachunterricht: Es ist eine Lebenserfahrung, die Kinder selbstständiger, selbstbewusster und internationaler macht.</p>
-				
-				<h2 class="text-2xl font-bold mb-6 mt-8">Schuljahr am englischen Internat</h2>
-				
-				<h3 class="text-xl font-semibold mb-4">Tradition und Moderne</h3>
-				<p class="text-gray-600 mb-6">Ein Schulaufenthalt an einem Internat in England, Schottland oder Irland kann wichtige Impulse in der Entwicklung eines Kindes geben. Über den Tellerrand blicken, neue Freunde kennenlernen, in einer anderen Sprache und Kultur heimisch werden. Zunehmend mehr deutsche Schüler und Schülerinnen zieht es für eine längere Zeit in ein anderes Land. Der Aufenthalt an einem britischen Internat ist eine tolle Gelegenheit, um erste Erfahrungen im Ausland zu sammeln. Ein Internatsaufenthalt fördert eigenständiges und verantwortungsvolles Handeln und gibt den Jungen und Mädchen die Möglichkeit sich akademisch zu entfalten und über sich hinaus zu wachsen.</p>
-				
-				<p class="text-gray-600 mb-6">An den Internaten in England wird Ihr Kind die erforderlichen Englischkenntnisse für eine erfolgreiche schulische und berufliche Zukunft ganz nebenbei erlernen. Und auch mit dem hohen akademischen Anspruch kreative und sportliche Interessen gleichermaßen ausleben können. Lernen wird hier als ganzheitlicher Prozess gelebt und endet nicht mit der Schulglocke.</p>
-				
-				<p class="text-gray-600 mb-6">In Großbritannien, wie in keinem anderen Land, vereint sich in den Schulen Tradition und Moderne. Altehrwürdige Internate und jahrhundertealte Bräuche treffen auf moderne Lehrmethoden, hervorragend ausgestattete Klassenzimmer und einen breiten Fächerkanon. Das Konzept der Ganztagsschule verbindet auf besondere Weise schulische und außerschulische Aktivitäten.</p>
-				
-				<p class="text-gray-600 mb-6">Besonders bekannt sind die britischen Internate natürlich auch bei allen Harry Potter Fans. An einem Internat in Großbritannien können Kinder ihren Traum verwirklichen ein bisschen Hogwarts zu erleben.</p>
-			</div>
+<section class="relative h-[400px] flex items-center">
+  <div class="absolute inset-0 overflow-hidden">
+    <img src="/images/internate-1.jpg" alt="Internate England" class="w-full h-full object-cover"/>
+    <div class="absolute inset-0 bg-blue-900/50"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-4 w-full">
+    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Internate & Boarding Schools</h1>
+    <p class="text-xl text-blue-100">Boarding Schools in England, Schottland und Irland</p>
+  </div>
+</section>
 
-			<!-- Info Cards -->
-			<div class="grid md:grid-cols-3 gap-8 mb-16">
-				<div class="bg-white p-8 rounded-xl shadow-lg">
-					<div class="text-4xl mb-4">🏫</div>
-					<h3 class="text-xl font-bold mb-3">Private Internate</h3>
-					<p class="text-gray-600 mb-4">Aufenthalt im privaten Internat von einem Term bis zu einem Jahr in Großbritannien und Irland.</p>
-					<a href="/internate/private-internate" class="text-blue-600 font-medium hover:underline">Mehr erfahren →</a>
-				</div>
-				
-				<div class="bg-white p-8 rounded-xl shadow-lg">
-					<div class="text-4xl mb-4">🏛️</div>
-					<h3 class="text-xl font-bold mb-3">Staatliche Schulen</h3>
-					<p class="text-gray-600 mb-4">Aufenthalt im staatlichen Internat ab einem Jahr in Großbritannien und Irland.</p>
-					<a href="/internate/staatliche-schulen" class="text-blue-600 font-medium hover:underline">Mehr erfahren →</a>
-				</div>
-				
-				<div class="bg-white p-8 rounded-xl shadow-lg">
-					<div class="text-4xl mb-4">📚</div>
-					<h3 class="text-xl font-bold mb-3">Unsere Internate</h3>
-					<p class="text-gray-600 mb-4">Mit diesen Schulen arbeiten wir besonders gut und gerne zusammen.</p>
-					<a href="/internate/unsere-internate" class="text-blue-600 font-medium hover:underline">Mehr erfahren →</a>
-				</div>
-			</div>
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="prose max-w-4xl mx-auto">
+      <p class="text-gray-600 text-lg mb-6">Ein Schuljahr oder Trimester an einem britischen Internat ist eine bereichernde Erfahrung für junge Menschen. Die Schüler leben auf dem Schulgelände und werden rund um die Uhr betreut.</p>
+      
+      <p class="text-gray-600 text-lg mb-6">Britische Internate bieten erstklassige akademische Ausbildung in Kombination mit breitem Sport- und Freizeitangebot. Die Abschlüsse (A-Levels, IB, GCSE) sind international anerkannt.</p>
+    </div>
+  </div>
+</section>
 
-			<!-- Das britische Schuljahr -->
-			<div class="bg-blue-50 rounded-2xl p-8 mb-16">
-				<h2 class="text-2xl font-bold mb-6">Das britische Schuljahr</h2>
-				<p class="text-gray-600 mb-6">Das Schuljahr in England, Schottland & Irland gliedert sich in drei Trimester von jeweils 9-12 Wochen Dauer:</p>
-				
-				<div class="grid md:grid-cols-3 gap-6 mb-6">
-					<div class="bg-white p-6 rounded-xl">
-						<div class="font-bold text-blue-600 mb-2">Autumn Term</div>
-						<div class="text-gray-600">September bis Weihnachten</div>
-					</div>
-					<div class="bg-white p-6 rounded-xl">
-						<div class="font-bold text-blue-600 mb-2">Spring Term</div>
-						<div class="text-gray-600">Januar bis kurz vor Ostern</div>
-					</div>
-					<div class="bg-white p-6 rounded-xl">
-						<div class="font-bold text-blue-600 mb-2">Summer Term</div>
-						<div class="text-gray-600">Ostern bis Anfang Juli</div>
-					</div>
-				</div>
-				
-				<p class="text-gray-600">Am besten eignet sich der Start im Autumn Term, hier ist allerdings auch die Nachfrage am größten. Deshalb kann es sogar sehr sinnvoll sein, Anfang Januar oder – je nach Jahrgangsstufe – erst im Summer Term zu starten.</p>
-			</div>
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <a href="/kontakt" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
+      Beratung anfordern
+    </a>
+  </div>
+</section>
 
-			<!-- Abschlüsse -->
-			<div class="mb-16">
-				<h2 class="text-2xl font-bold mb-6">International Baccalaureate und A-Levels als Abschluss</h2>
-				
-				<div class="space-y-6">
-					<div class="bg-white p-6 rounded-xl shadow-md">
-						<h3 class="text-xl font-bold mb-3">A-Levels (GCE)</h3>
-						<p class="text-gray-600">Das englische "General Certificate of Education at Advanced Level" (GCE A-Level), wird nach 13 Schuljahren abgelegt. Bei Einhaltung bestimmter Fächerkombinationen wird der Abschluss an deutschen Hochschulen als fachgebundene Hochschulreife anerkannt.</p>
-					</div>
-					
-					<div class="bg-white p-6 rounded-xl shadow-md">
-						<h3 class="text-xl font-bold mb-3">International Baccalaureate (IB)</h3>
-						<p class="text-gray-600">Das von einigen britischen Schulen angebotene International Baccalaureate (IB), auch als internationales Abitur bekannt, vereinfacht aufgrund der breiteren Auswahl von Fächerkombinationen die internationale Anerkennung.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Unsere Beratung -->
-			<div class="bg-white rounded-2xl p-8 shadow-lg mb-16">
-				<h2 class="text-2xl font-bold mb-6">Unsere Beratung zu Schuljahren</h2>
-				<p class="text-gray-600 mb-6">Seit über zwei Jahrzehnten hilft unser Team Familien bei der Suche nach der besten Schule für den Schulaufenthalt in England, Schottland und Irland. Wir sind vollkommen auf die britische Schullandschaft spezialisiert und verfügen nicht nur über langjährige Erfahrung als Bildungsberater, sondern kennen Großbritannien und das britische Schulsystem genau.</p>
-				<p class="text-gray-600 mb-6">Im Vordergrund stehen dabei immer Sie – die Familien und Kinder selbst. Denn nur wenn wir Ihre Wünsche, Vorstellungen und Anforderungen genau kennen, können wir Ihnen die beste Schulauswahl in England präsentieren.</p>
-				<p class="text-gray-600">Wir begleiten Sie bei allen Schritten der Planung und stehen Ihnen bei Ihren Fragen zur Seite. Sie haben mit uns deutschsprachige Ansprechpartner, die jederzeit, auch während Ihr Kind eine Schule in England besucht, für Sie erreichbar sind.</p>
-			</div>
-
-			<!-- Testimonials -->
-			<div class="mb-16">
-				<h2 class="text-2xl font-bold mb-8 text-center">Was unsere Kunden sagen</h2>
-				
-				<div class="grid md:grid-cols-2 gap-6">
-					<div class="bg-white p-6 rounded-xl shadow-md">
-						<p class="text-gray-600 italic mb-4">"Unsere Tochter hat sich sehr wohl gefühlt und viel gelernt, selbstverständlich die Sprache, aber auch andere Dinge. Die Klasse sei sehr diszipliniert gewesen, die Lehrer außergewöhnlich freundlich und persönlich. Es wurden auch sehr viele Ausflüge und Aktivitäten angeboten, wirklich super!"</p>
-						<p class="font-semibold">— M. Surbeck</p>
-					</div>
-					
-					<div class="bg-white p-6 rounded-xl shadow-md">
-						<p class="text-gray-600 italic mb-4">"Mein Sohn besucht, vor allem durch Ihre Begleitung im Vorfeld, seit nunmehr 2 Trimester die Boarding School und ist begeistert. Er wird deshalb auch noch das Summer Term in England absolvieren, um dann wieder in der deutschen Oberstufe sein Abitur zu machen."</p>
-						<p class="font-semibold">— J. Wingenfeld</p>
-					</div>
-					
-					<div class="bg-white p-6 rounded-xl shadow-md">
-						<p class="text-gray-600 italic mb-4">"Die drei Monate dort haben mir wirklich gut gefallen und waren eine tolle Erfahrung. Ich wurde sofort aufgenommen und habe mich wie ein Teil der Boarding Family gefühlt. Durch die kleine Anzahl an Schülern war es möglich viele Experimente durchzuführen und viele Fragen zu stellen."</p>
-						<p class="font-semibold">— S. Konstantinidis</p>
-					</div>
-					
-					<div class="bg-white p-6 rounded-xl shadow-md">
-						<p class="text-gray-600 italic mb-4">"Unser Sohn fühlt sich ausgesprochen wohl und gut aufgehoben an der Schule. Sein Englisch hat sich schon extrem verbessert und die Betreuung ist ausgesprochen gut. Das Sport- und Freizeitangebot vom Boarding House ist auch sehr gut und abwechslungsreich."</p>
-						<p class="font-semibold">— N. Horstmann</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Die wichtigsten Punkte -->
-			<div class="bg-gray-50 rounded-2xl p-8 mb-16">
-				<h2 class="text-2xl font-bold mb-6">Die wichtigsten Punkte zum Aufenthalt im Internat</h2>
-				
-				<ul class="space-y-4">
-					<li class="flex items-start gap-3">
-						<span class="text-green-500 text-xl">✓</span>
-						<p class="text-gray-600">Ein Schulaufenthalt in England, Schottland oder Irland kann wichtige Impulse in der Entwicklung eines Kindes geben und eigenständiges und verantwortungsvolles Handeln fördern.</p>
-					</li>
-					<li class="flex items-start gap-3">
-						<span class="text-green-500 text-xl">✓</span>
-						<p class="text-gray-600">Der Aufenthalt an einem Internat bietet Ihren Kindern neben den erforderlichen Englischkenntnissen für ihre schulische und berufliche Zukunft auch die nötige Struktur.</p>
-					</li>
-					<li class="flex items-start gap-3">
-						<span class="text-green-500 text-xl">✓</span>
-						<p class="text-gray-600">Wir sind auf die britische Schullandschaft spezialisiert und verfügen über jahrelange Erfahrung als Bildungsberater.</p>
-					</li>
-					<li class="flex items-start gap-3">
-						<span class="text-green-500 text-xl">✓</span>
-						<p class="text-gray-600">Die Auswahl an Schulen ist groß – aber nicht jede Schule passt auch zu Ihrem Kind. Deshalb ist genaue Beratung hier umso wichtiger.</p>
-					</li>
-					<li class="flex items-start gap-3">
-						<span class="text-green-500 text-xl">✓</span>
-						<p class="text-gray-600">Wir beraten Sie gerne zur Anerkennung der schulischen Leistungen bei der Rückkehr nach Deutschland.</p>
-					</li>
-				</ul>
-			</div>
-
-			<!-- CTA -->
-			<div class="text-center">
-				<h2 class="text-2xl font-bold mb-6">Interessiert an einem Internatsaufenthalt?</h2>
-				<p class="text-gray-600 mb-8">Lassen Sie sich individuell von uns beraten!</p>
-				<div class="flex flex-wrap justify-center gap-4">
-					<a href="/kontakt" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
-						Beratung anfordern
-					</a>
-					<a href="/kontakt" class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition">
-						Rückruf vereinbaren
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
 </Layout>

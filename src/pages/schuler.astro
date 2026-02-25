@@ -2,189 +2,53 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Sprachreisen für Schüler - English in Britain" description="Sprachreisen für Schüler nach England, Schottland und Irland. Ferienkurse, Sportcamps, Klassenfahrten für 8-18 Jahre.">
-	<!-- Hero -->
-	<section class="relative h-[400px] flex items-center">
-		<div class="absolute inset-0 overflow-hidden">
-			<img src="/images/hero-students.jpg" alt="Sprachreisen für Schüler" class="w-full h-full object-cover"/>
-			<div class="absolute inset-0 bg-black/40"></div>
-		</div>
-		<div class="relative max-w-7xl mx-auto px-4 w-full">
-			<span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-4">Ab 8 Jahren</span>
-			<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Sprachreisen für Schüler</h1>
-			<p class="text-xl text-blue-100 max-w-2xl">Englisch lernen mit Spaß: Ferienkurse, Sportcamps und mehr in England, Schottland und Irland</p>
-		</div>
-	</section>
+<Layout title="Sprachreisen für Schüler - English in Britain" description="Sprachreisen für Kinder und Jugendliche nach England. Ferienkurse,Jugendkurse und mehr.">
 
-	<!-- Content -->
-	<section class="py-16">
-		<div class="max-w-7xl mx-auto px-4">
-			<!-- Einleitung -->
-			<div class="prose max-w-4xl mx-auto mb-16">
-				<h2 class="text-2xl font-bold mb-6">Englischkurse für Schüler</h2>
-				
-				<p class="text-gray-600 mb-6">Ihre Kinder profitieren enorm von einer Sprachreise England für Schüler. Die Schüler können hier erste Auslandserfahrungen ohne Eltern machen, die in der Schule erlernten Englischkenntnisse verbessern und in einem internationalen Umfeld neue Freunde finden.</p>
-				
-				<p class="text-gray-600 mb-6">Viele Jugendliche kommen nicht nur mit besserem Englisch sondern auch erwachsener aus ihrem Sprachurlaub zurück. Die englischen Lehrer schaffen es oft Motivation und Begeisterung für die Sprache zu wecken. Englisch wird so vom Schulfach zum alltäglichen Werkzeug – denn neben dem Unterricht findet auch das Freizeitprogramm komplett auf Englisch statt.</p>
-				
-				<p class="text-gray-600 mb-6">Auch in der Gastfamilie oder im Internat wird Englisch gesprochen. Die Schüler bestreiten ihren kompletten Aufenthalt in englischer Sprache, sie müssen sich selbst verständigen und gewinnen so auch wertvolle Lebenserfahrungen.</p>
-			</div>
+<section class="relative h-[400px] flex items-center">
+  <div class="absolute inset-0 overflow-hidden">
+    <img src="/images/hero-students.jpg" alt="Sprachreisen für Schüler" class="w-full h-full object-cover"/>
+    <div class="absolute inset-0 bg-blue-900/50"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-4 w-full">
+    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Sprachreisen für Schüler</h1>
+    <p class="text-xl text-blue-100">Ihre Kinder profitieren enorm von einer Sprachreise</p>
+  </div>
+</section>
 
-			<!-- Programme -->
-			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-				<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-					<div class="text-4xl mb-4">☀️</div>
-					<h3 class="text-xl font-bold mb-3">Ferienkurse</h3>
-					<p class="text-gray-600 mb-4">Sprachreisen für Schülerinnen und Schüler in England, Irland und Malta – in den Ferien.</p>
-					<a href="/schuler/ferienkurse" class="text-blue-600 font-medium hover:underline">Mehr erfahren →</a>
-				</div>
-				
-				<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-					<div class="text-4xl mb-4">🎓</div>
-					<h3 class="text-xl font-bold mb-3">Abiturvorbereitung</h3>
-					<p class="text-gray-600 mb-4">Intensive Vorbereitung auf die Abiturprüfung im Fach Englisch.</p>
-					<a href="/schuler/abitur" class="text-blue-600 font-medium hover:underline">Mehr erfahren →</a>
-				</div>
-				
-				<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-					<div class="text-4xl mb-4">⚽</div>
-					<h3 class="text-xl font-bold mb-3">Sportkurse</h3>
-					<p class="text-gray-600 mb-4">Englischkurse in den Schulferien mit tollen Sportmöglichkeiten.</p>
-					<a href="/schuler/sport" class="text-blue-600 font-medium hover:underline">Mehr erfahren →</a>
-				</div>
-				
-				<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-					<div class="text-4xl mb-4">🏫</div>
-					<h3 class="text-xl font-bold mb-3">Klassenfahrten</h3>
-					<p class="text-gray-600 mb-4">Unser Service für Schulen und Lehrer: Auf Klassenfahrt in England, Irland und Malta.</p>
-					<a href="/schuler/klassenfahrten" class="text-blue-600 font-medium hover:underline">Mehr erfahren →</a>
-				</div>
-				
-				<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-					<div class="text-4xl mb-4">🏄</div>
-					<h3 class="text-xl font-bold mb-3">Aktuelle Angebote</h3>
-					<p class="text-gray-600 mb-4">Unsere aktuellen Angebote zu Ferienkursen.</p>
-					<a href="/preise" class="text-blue-600 font-medium hover:underline">Mehr erfahren →</a>
-				</div>
-				
-				<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-					<div class="text-4xl mb-4">❓</div>
-					<h3 class="text-xl font-bold mb-3">FAQ</h3>
-					<p class="text-gray-600 mb-4">Die gängigsten Fragen zu Ferienkursen für Schüler.</p>
-					<a href="/schuler/faq" class="text-blue-600 font-medium hover:underline">Mehr erfahren →</a>
-				</div>
-			</div>
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="prose max-w-4xl mx-auto">
+      <p class="text-gray-600 text-lg mb-6">Neben der Einstufung in das richtige Sprachlevel wird selbstverständlich auch das Alter bei der Klassenbildung berücksichtigt. Beim Freizeitprogramm wird ebenfalls nach Alter differenziert.</p>
+      
+      <p class="text-gray-600 text-lg mb-6">Alle Programme bieten eine große Bandbreite an Sport- und Freizeitaktivitäten, zudem werden verschiedene Ausflüge gemacht. Insbesondere bei den Internatsangeboten können einige Sportarten (wie z.B. Fußball oder Reiten) als Schwerpunkt gewählt werden.</p>
+      
+      <p class="text-gray-600 text-lg mb-6">Die Kosten für eine Sprachreise nach England für Schüler sind in der Regel höher als die bei Erwachsenen, da die Betreuung wesentlich intensiver und das Freizeitprogramm im Preis inbegriffen ist.</p>
+    </div>
+  </div>
+</section>
 
-			<!-- Altersgruppen -->
-			<div class="bg-blue-50 rounded-2xl p-8 mb-16">
-				<h2 class="text-2xl font-bold mb-6">Englisch Sprachkurse für alle Altersklassen</h2>
-				
-				<p class="text-gray-600 mb-6">Eine Sprachreise nach England für Schüler wird für jede Altersgruppe von 3 bis 18 Jahren angeboten. Neben der Einstufung in das richtige Sprachlevel wird selbstverständlich auch das Alter bei der Klassenbildung berücksichtigt. Beim Freizeitprogramm wird ebenfalls nach Alter differenziert.</p>
-				
-				<p class="text-gray-600 mb-6">Alle Programme bieten eine große Bandbreite an Sport- und Freizeitaktivitäten, zudem werden verschiedene Ausflüge gemacht. Insbesondere bei den Internatsangeboten können einige Sportarten (wie z.B. Fußball oder Reiten) als Schwerpunkt gewählt werden.</p>
-				
-				<p class="text-gray-600 mb-6">Die Kosten für eine Sprachreise nach England für Schüler sind in der Regel höher als die bei Erwachsenen, da die Betreuung wesentlich intensiver und das Freizeitprogramm im Preis inbegriffen ist.</p>
-				
-				<p class="text-gray-600">Die Sprachreisen können in den meisten Schulferien stattfinden (zu Ostern, Pfingsten, im Sommer oder in den Herbstferien).</p>
-			</div>
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-8 text-center">Unterbringung</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-8 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-4">Gastfamilie</h3>
+        <p class="text-gray-600">In der Familie wird in entspannter Atmosphäre außerhalb des Unterrichts Englisch gesprochen. Die Familien werden nach strengen Kriterien ausgesucht und müssen neben verschiedenen Sicherheitsregeln auch ein polizeiliches Führungszeugnis einreichen.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-4">Internat</h3>
+        <p class="text-gray-600">Im Internat werden die Jugendlichen in Sechs-, Vier- oder Einbettzimmern untergebracht und nach Alter getrennt. Die Wege zur Schule sind kurz, denn sowohl das Boarding House mit den Schlafzimmern als auch das Schulgebäude liegen auf dem gleichen Gelände.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-			<!-- Gastfamilie vs Internat -->
-			<div class="mb-16">
-				<h2 class="text-2xl font-bold mb-6">Gastfamilie oder Internat?</h2>
-				
-				<div class="grid md:grid-cols-2 gap-8">
-					<div class="bg-white p-8 rounded-xl shadow-lg">
-						<h3 class="text-xl font-bold mb-4">🏠 Gastfamilie</h3>
-						<p class="text-gray-600 mb-4">In der Familie wird in entspannter Atmosphäre außerhalb des Unterrichts Englisch gesprochen. Die Familien werden nach strengen Kriterien ausgesucht und müssen neben verschiedenen Sicherheitsregeln auch ein polizeiliches Führungszeugnis einreichen.</p>
-						<p class="text-gray-600">Die Familien kümmern sich um ihre Gäste und je nach Alter des Gastes müssen sie verschiedene Kriterien erfüllen, um Kinder in dieser Altersstufe beherbergen zu dürfen.</p>
-					</div>
-					
-					<div class="bg-white p-8 rounded-xl shadow-lg">
-						<h3 class="text-xl font-bold mb-4">🏫 Internat</h3>
-						<p class="text-gray-600 mb-4">Im Internat werden die Jugendlichen in Sechs-, Vier- oder Einbettzimmern untergebracht und nach Alter getrennt. Die Wege zur Schule sind kurz, denn sowohl das Boarding House mit den Schlafzimmern als auch das Schulgebäude liegen auf dem gleichen Gelände.</p>
-						<p class="text-gray-600">Internatsgelände sind abgeschlossene Bereiche, die meistens eine Vielzahl von Sport- und Freizeitmöglichkeiten bieten. Gerade bezüglich der Sicherheitsaspekte gibt es keine bessere Unterbringung.</p>
-					</div>
-				</div>
-			</div>
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <a href="/kontakt" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
+      Beratung anfordern
+    </a>
+  </div>
+</section>
 
-			<!-- Testimonials -->
-			<div class="mb-16">
-				<h2 class="text-2xl font-bold mb-8 text-center">Was unsere Kunden sagen</h2>
-				
-				<div class="grid md:grid-cols-2 gap-6">
-					<div class="bg-white p-6 rounded-xl shadow-md">
-						<p class="text-gray-600 italic mb-4">"Unsere Töchter fühlten sich schnell heimisch. Sie sind - anders als in Deutschland - jeden Tag der gebuchten Woche gern zur Sprachschule gegangen."</p>
-						<p class="font-semibold">— A. und R. Rietz</p>
-					</div>
-					
-					<div class="bg-white p-6 rounded-xl shadow-md">
-						<p class="text-gray-600 italic mb-4">"Die Schule versteht es wunderbar, Sprache in ungezwungener Weise zu vermitteln. Die Aktivitäten waren hervorragend abgestimmt auf das, was in der jeweiligen Altersklasse begeistert."</p>
-						<p class="font-semibold">— M. Schmöger</p>
-					</div>
-					
-					<div class="bg-white p-6 rounded-xl shadow-md">
-						<p class="text-gray-600 italic mb-4">"Ich muss Ihnen ein großes Lob aussprechen für die exzellente Beratung und Vorbereitung der Sprachreise. Wir haben nach den 14 Tagen ein sehr glückliches Kind mit vielen neuen Eindrücken direkt am Campus abgeholt."</p>
-						<p class="font-semibold">— K. Visschedyk</p>
-					</div>
-					
-					<div class="bg-white p-6 rounded-xl shadow-md">
-						<p class="text-gray-600 italic mb-4">"Unsere Töchtern hat es in Oxford und Cambridge sehr gut gefallen. Sie würden überall die Note 1 verteilen. Die Lehrer waren gut, die Familien und auch der Unterricht."</p>
-						<p class="font-semibold">— S. Kretschmer</p>
-					</div>
-					
-					<div class="bg-white p-6 rounded-xl shadow-md">
-						<p class="text-gray-600 italic mb-4">"Mein Sohn war in den Osterferien in Oxford gewesen und es hatte ihm sehr gut gefallen. Höchst professionell. Auch die Unterbringung war hervorragend bei einer Gastfamilie."</p>
-						<p class="font-semibold">— K. Greimel</p>
-					</div>
-					
-					<div class="bg-white p-6 rounded-xl shadow-md">
-						<p class="text-gray-600 italic mb-4">"Ich war überrascht wie viel Spaß Englisch machen konnte, ganz im Gegensatz zu den eher geschmacklosen Stunden in Deutschland. In der Sprachschule arbeitet man in kleinen Gruppen."</p>
-						<p class="font-semibold">— M. Burckhardt</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Die wichtigsten Punkte -->
-			<div class="bg-gray-50 rounded-2xl p-8 mb-16">
-				<h2 class="text-2xl font-bold mb-6">Die wichtigsten Punkte</h2>
-				
-				<ul class="space-y-4">
-					<li class="flex items-start gap-3">
-						<span class="text-green-500 text-xl">✓</span>
-						<p class="text-gray-600">Die meisten Sprachreisen nach England für Schüler werden in den Ferien angeboten, es gibt aber auch ganzjährig stattfindende Kurse.</p>
-					</li>
-					<li class="flex items-start gap-3">
-						<span class="text-green-500 text-xl">✓</span>
-						<p class="text-gray-600">Unterbringung in der Gastfamilie oder im Internat – beide Optionen haben ihre Vorteile.</p>
-					</li>
-					<li class="flex items-start gap-3">
-						<span class="text-green-500 text-xl">✓</span>
-						<p class="text-gray-600">Sprachreisen für Schüler von 3 bis 18 Jahren, mit altersgerechter Klassenbildung.</p>
-					</li>
-					<li class="flex items-start gap-3">
-						<span class="text-green-500 text-xl">✓</span>
-						<p class="text-gray-600">Sport- und Freizeitaktivitäten sowie verschiedene Ausflüge ergänzen den Unterricht.</p>
-					</li>
-					<li class="flex items-start gap-3">
-						<span class="text-green-500 text-xl">✓</span>
-						<p class="text-gray-600">Ferienkurse sollen Spaß machen und die Ferien nicht aus den Augen lassen.</p>
-					</li>
-				</ul>
-			</div>
-
-			<!-- CTA -->
-			<div class="text-center">
-				<h2 class="text-2xl font-bold mb-6">Interessiert an einer Sprachreise für Schüler?</h2>
-				<p class="text-gray-600 mb-8">Lassen Sie sich individuell von uns beraten!</p>
-				<div class="flex flex-wrap justify-center gap-4">
-					<a href="/kontakt" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
-						Beratung anfordern
-					</a>
-					<a href="/kontakt" class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition">
-						Rückruf vereinbaren
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
 </Layout>
